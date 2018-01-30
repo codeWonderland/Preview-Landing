@@ -1,0 +1,150 @@
+div.preview-landing-page {
+  max-width: 1280px;
+  width: 100%;
+  margin: auto; }
+  div.preview-landing-page .video-container {
+    width: 100%;
+    height: auto;
+    max-height: 720px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center; }
+    div.preview-landing-page .video-container .video-box {
+      width: 1280px;
+      height: auto;
+      max-height: 720px;
+      overflow: hidden; }
+      div.preview-landing-page .video-container .video-box .dynamic-video {
+        height: auto;
+        width: 100%; }
+        @media only screen and (max-width: 768px) {
+          div.preview-landing-page .video-container .video-box .dynamic-video.desktop {
+            display: none; } }
+        @media only screen and (min-width: 768px) {
+          div.preview-landing-page .video-container .video-box .dynamic-video.mobile {
+            display: none; } }
+    div.preview-landing-page .video-container .video-overlay {
+      font-family: 'Lato', sans-serif;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+      color: white;
+      z-index: 99;
+      text-align: center; }
+      div.preview-landing-page .video-container .video-overlay .play-button {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 2rem; }
+      div.preview-landing-page .video-container .video-overlay p {
+        margin-bottom: 2.5rem; }
+      div.preview-landing-page .video-container .video-overlay .form-container {
+        position: relative; }
+        div.preview-landing-page .video-container .video-overlay .form-container .form-box {
+          position: relative;
+          display: flex;
+          justify-content: center; }
+          div.preview-landing-page .video-container .video-overlay .form-container .form-box .white-button, div.preview-landing-page .video-container .video-overlay .form-container .form-box .blue-button {
+            background: white;
+            color: #434851;
+            position: relative;
+            text-shadow: unset !important;
+            font-size: 12px;
+            letter-spacing: 0.25px;
+            width: 40%;
+            float: left;
+            padding: 0.6rem 0; }
+            div.preview-landing-page .video-container .video-overlay .form-container .form-box .white-button:hover, div.preview-landing-page .video-container .video-overlay .form-container .form-box .blue-button:hover {
+              cursor: pointer; }
+          div.preview-landing-page .video-container .video-overlay .form-container .form-box .blue-button {
+            background: #00a9e0;
+            color: white;
+            width: 22%; }
+        div.preview-landing-page .video-container .video-overlay .form-container div.popup-form {
+          display: none;
+          height: 500px; }
+        div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] .blue-button {
+          background: gray; }
+        div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] .white-button:after {
+          position: absolute;
+          display: block;
+          content: ' ';
+          border-top: 10px solid white;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          bottom: -10px;
+          left: 15px;
+          z-index: 999; }
+        div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] div.popup-form {
+          display: block;
+          margin: auto;
+          position: absolute;
+          background: #00a9e0;
+          width: 60%;
+          left: 22.5%;
+          right: 22.5%; }
+          div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] div.popup-form p.exit-button {
+            float: right;
+            margin-right: 1rem;
+            font-size: 20px; }
+            div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] div.popup-form p.exit-button:hover {
+              cursor: pointer; }
+  div.preview-landing-page .triple-pane {
+    margin-top: -6px;
+    padding: 1rem;
+    background: #e6e6e6;
+    color: #434851;
+    text-align: center; }
+    div.preview-landing-page .triple-pane .single-pane.col-md-4 {
+      padding: 3rem; }
+      div.preview-landing-page .triple-pane .single-pane.col-md-4 p strong {
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase; }
+      div.preview-landing-page .triple-pane .single-pane.col-md-4 p {
+        margin-bottom: 0;
+        font-size: 12px; }
+    div.preview-landing-page .triple-pane .triple-pane-title {
+      line-height: 0.5;
+      text-align: center; }
+      div.preview-landing-page .triple-pane .triple-pane-title span {
+        color: #4b4b4b;
+        display: inline-block;
+        position: relative; }
+        div.preview-landing-page .triple-pane .triple-pane-title span:before, div.preview-landing-page .triple-pane .triple-pane-title span:after {
+          content: "";
+          position: absolute;
+          height: 1px;
+          background-color: #4b4b4b;
+          top: 0;
+          width: 400%;
+          margin-top: 2px; }
+        div.preview-landing-page .triple-pane .triple-pane-title span:before {
+          right: 100%;
+          margin-right: 15px; }
+        div.preview-landing-page .triple-pane .triple-pane-title span:after {
+          left: 100%;
+          margin-left: 15px; }
+  div.preview-landing-page #content.microsite {
+    margin: 0 !important;
+    width: 100% !important; }
+  div.preview-landing-page #side-nav {
+    display: none; }
+  div.preview-landing-page #column-container-1 {
+    width: 100%;
+    max-width: unset;
+    margin: 0; }
+  div.preview-landing-page #content-wrapper {
+    margin-top: -8px; }
+  div.preview-landing-page .popup-video {
+    width: 100%;
+    height: auto; }
+  @media only screen and (min-width: 768px) {
+    div.preview-landing-page .remodal[data-remodal-id='video-modal'] {
+      width: 75%; } }
+
+/*# sourceMappingURL=landing.css.map */
