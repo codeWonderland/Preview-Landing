@@ -251,4 +251,42 @@ div.preview-landing-page
 	  width: 75%;
 	}
   }
+
+  div.alternating-images
+  {
+	@media only screen and (min-width: 768px)
+	{
+	  width: 85%;
+	  margin: auto;
+	}
+
+	.col-md-6
+	{
+	  padding: 0;
+
+	  &.info-card
+	  {
+		padding: 2rem;
+		height: 268.5px;
+
+		&[data-card-color="#00a9e0"]
+		{
+		  background: #00a9e0;
+		  color: #fff;
+		}
+
+		&[data-card-color="#e6e6e6"]
+		{
+		  background: #e6e6e6;
+		  color: #000;
+		}
+
+		&[data-card-color="#bd5527"]
+		{
+		  background: #bd5527;
+		  color: #fff;
+		}
+	  }
+	}
+  }
 }

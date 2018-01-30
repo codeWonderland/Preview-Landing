@@ -146,5 +146,23 @@ div.preview-landing-page {
   @media only screen and (min-width: 768px) {
     div.preview-landing-page .remodal[data-remodal-id='video-modal'] {
       width: 75%; } }
+  @media only screen and (min-width: 768px) {
+    div.preview-landing-page div.alternating-images {
+      width: 85%;
+      margin: auto; } }
+  div.preview-landing-page div.alternating-images .col-md-6 {
+    padding: 0; }
+    div.preview-landing-page div.alternating-images .col-md-6.info-card {
+      padding: 2rem;
+      height: 268.5px; }
+      div.preview-landing-page div.alternating-images .col-md-6.info-card[data-card-color="#00a9e0"] {
+        background: #00a9e0;
+        color: #fff; }
+      div.preview-landing-page div.alternating-images .col-md-6.info-card[data-card-color="#e6e6e6"] {
+        background: #e6e6e6;
+        color: #000; }
+      div.preview-landing-page div.alternating-images .col-md-6.info-card[data-card-color="#bd5527"] {
+        background: #bd5527;
+        color: #fff; }
 
 /*# sourceMappingURL=landing.css.map */
