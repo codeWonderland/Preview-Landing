@@ -42,7 +42,6 @@ div.preview-landing-page
 		}
 	  }
 	}
-
 	.video-overlay
 	{
 	  font-family: 'Lato', sans-serif;
@@ -157,6 +156,14 @@ div.preview-landing-page
 	}
   }
 
+
+  .cc-blue-header {
+    color: #00A9E0;
+
+    h3 {
+      font-size:1.25em;
+    }
+  }
   .triple-pane
   {
 	margin-top: -6px;
@@ -179,7 +186,7 @@ div.preview-landing-page
 	  p
 	  {
 		margin-bottom: 0;
-		font-size: 12px;
+		font-size: 14px;
 	  }
 	}
 
@@ -218,6 +225,10 @@ div.preview-landing-page
   {
 	width: 100%;
 	height: auto;
+  }
+  .remodal[data-remodal-id='video-modal']
+  {
+    max-width: 750px;
   }
 
   @media only screen and (min-width: 768px)
@@ -287,4 +298,21 @@ div.preview-landing-page
 #content-wrapper
 {
   margin-top: -8px;
+}
+
+.responsive-video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+
+  iframe,object,embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }

@@ -93,6 +93,10 @@ div.preview-landing-page {
             font-size: 20px; }
             div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] div.popup-form p.exit-button:hover {
               cursor: pointer; }
+  div.preview-landing-page .cc-blue-header {
+    color: #00A9E0; }
+    div.preview-landing-page .cc-blue-header h3 {
+      font-size: 1.25em; }
   div.preview-landing-page .triple-pane {
     margin-top: -6px;
     padding: 1rem;
@@ -107,7 +111,7 @@ div.preview-landing-page {
         text-transform: uppercase; }
       div.preview-landing-page .triple-pane .single-pane.col-md-4 p {
         margin-bottom: 0;
-        font-size: 12px; }
+        font-size: 14px; }
     div.preview-landing-page .triple-pane .triple-pane-title {
       line-height: 0.5;
       text-align: center; }
@@ -132,6 +136,8 @@ div.preview-landing-page {
   div.preview-landing-page .popup-video {
     width: 100%;
     height: auto; }
+  div.preview-landing-page .remodal[data-remodal-id='video-modal'] {
+    max-width: 750px; }
   @media only screen and (min-width: 768px) {
     div.preview-landing-page .remodal[data-remodal-id='video-modal'] {
       width: 75%; } }
@@ -168,3 +174,17 @@ div.preview-landing-page {
 
 #content-wrapper {
   margin-top: -8px; }
+
+.responsive-video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto; }
+  .responsive-video-container iframe, .responsive-video-container object, .responsive-video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
