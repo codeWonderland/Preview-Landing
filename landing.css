@@ -40,7 +40,7 @@ div.preview-landing-page {
         width: 60px;
         height: 60px;
         margin-bottom: 2rem; }
-      div.preview-landing-page .video-container .video-overlay p {
+      div.preview-landing-page .video-container .video-overlay .buffer-bottom {
         margin-bottom: 2.5rem; }
       div.preview-landing-page .video-container .video-overlay .form-container {
         position: relative;
@@ -88,6 +88,9 @@ div.preview-landing-page {
           right: 0; }
           div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] div.popup-form .ccLeadContent {
             border: none; }
+            div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] div.popup-form .ccLeadContent .ccLeadCopy {
+              margin-top: 1em;
+              padding-top: 1em; }
           div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] div.popup-form p.exit-button {
             float: right;
             margin-right: 1rem;
