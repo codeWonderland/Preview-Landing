@@ -57,7 +57,8 @@ div.preview-landing-page {
             font-size: 14px;
             letter-spacing: 0.25px;
             float: left;
-            padding: 1rem; }
+            padding: 1rem;
+            flex-grow: 1; }
             div.preview-landing-page .video-container .video-overlay .form-container .form-box .white-button:hover, div.preview-landing-page .video-container .video-overlay .form-container .form-box .blue-button:hover {
               cursor: pointer; }
           div.preview-landing-page .video-container .video-overlay .form-container .form-box .blue-button {
@@ -86,11 +87,23 @@ div.preview-landing-page {
           /*width:275px; */
           left: 0;
           right: 0; }
-          div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] div.popup-form .ccLeadContent {
-            border: none; }
-            div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] div.popup-form .ccLeadContent .ccLeadCopy {
-              margin-top: 1em;
-              padding-top: 1em; }
+          div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] div.popup-form .ccLead {
+            margin-top: 0;
+            margin-bottom: 0; }
+            div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] div.popup-form .ccLead .ccLeadContent {
+              border: none; }
+              div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] div.popup-form .ccLead .ccLeadContent .ccLeadCopy {
+                margin-top: 1em;
+                padding-top: 1em; }
+              div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] div.popup-form .ccLead .ccLeadContent form {
+                padding: .75em; }
+                div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] div.popup-form .ccLead .ccLeadContent form input, div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] div.popup-form .ccLead .ccLeadContent form select, div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] div.popup-form .ccLead .ccLeadContent form textarea, div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] div.popup-form .ccLead .ccLeadContent form div {
+                  width: 95%;
+                  text-align: left; }
+                div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] div.popup-form .ccLead .ccLeadContent form .chosen-container.chosen-container-single {
+                  width: 99%;
+                  text-shadow: none;
+                  padding-left: 5px; }
           div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] div.popup-form p.exit-button {
             float: right;
             margin-right: 1rem;

@@ -150,7 +150,17 @@ div.preview-landing-page
                   padding-top:1em;
                 }
                 form {
-                  padding:
+                  padding: .75em;
+
+                  input,select,textarea,div {
+                    width:95%;
+                    text-align: left;
+                  }
+                  .chosen-container.chosen-container-single {
+                    width: 99%;
+                    text-shadow: none;
+                    padding-left:5px;
+                  }
                 }
               }
             }
