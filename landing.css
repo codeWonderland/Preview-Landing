@@ -107,6 +107,18 @@ div.preview-landing-page {
                     padding-left: 5px; }
                   div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] div.popup-form .ccLead .ccLeadContent form .chosen-container.chosen-container-single .chosen-search input[type=text] {
                     width: 87%; }
+                div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] div.popup-form .ccLead .ccLeadContent form .ccLeadSubmit {
+                  display: flex;
+                  justify-content: space-between;
+                  padding: 1em 0 0;
+                  text-align: left;
+                  width: 96%; }
+                div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] div.popup-form .ccLead .ccLeadContent form .ccLeadButton {
+                  font-size: 14px;
+                  height: auto;
+                  margin: 0 .65em 0 0;
+                  padding: 0 10px;
+                  width: auto; }
           div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] div.popup-form p.exit-button {
             float: right;
             margin-right: 1rem;

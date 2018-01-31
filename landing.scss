@@ -166,6 +166,20 @@ div.preview-landing-page
                       width:87%;
                     }
                   }
+                  .ccLeadSubmit {
+                    display:flex;
+                    justify-content: space-between;
+                    padding:1em 0 0;
+                    text-align: left;
+                    width:96%;
+                  }
+                  .ccLeadButton {
+                    font-size:14px;
+                    height:auto;
+                    margin:0 .65em 0 0;
+                    padding:0 10px;
+                    width: auto;
+                  }
                 }
               }
             }
