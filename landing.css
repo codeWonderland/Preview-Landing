@@ -112,9 +112,10 @@ div.preview-landing-page {
                   justify-content: space-between;
                   padding: 1em 0 0;
                   text-align: left;
-                  width: 96%; }
+                  width: 95%; }
                 div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] div.popup-form .ccLead .ccLeadContent form .ccLeadButton {
                   font-size: 14px;
+                  font-weight: normal;
                   height: auto;
                   margin: 0 .65em 0 0;
                   padding: 0 10px;
