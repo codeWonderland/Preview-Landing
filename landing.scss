@@ -152,14 +152,19 @@ div.preview-landing-page
                 form {
                   padding: .75em;
 
-                  input,select,textarea,div {
+                  input,select,textarea {
                     width:95%;
-                    text-align: left;
                   }
                   .chosen-container.chosen-container-single {
-                    width: 99%;
+                    width: 99% !important;
                     text-shadow: none;
-                    padding-left:5px;
+                    text-align:left;
+                    a{
+                      padding-left:5px;
+                    }
+                    .chosen-search input[type=text] {
+                      width:87%;
+                    }
                   }
                 }
               }
