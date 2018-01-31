@@ -4,7 +4,7 @@
 
   $form = $(document.getElementsByClassName('form-container')[0]);
 
-  $('.blue-button,.white=button').on('click', function() {
+  $('.blue-button,.white-button').on('click', function() {
     if ($form.attr('data-form-open') === 'true') {
       $form.attr('data-form-open', 'false');
     } else {
