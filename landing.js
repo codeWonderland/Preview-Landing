@@ -7,6 +7,9 @@
   $('.blue-button,.white-button').on('click', function() {
     if ($form.attr('data-form-open') === 'true') {
       $form.attr('data-form-open', 'false');
+      if ($('.ccLeadContent form input').length) {
+        $('.ccLeadContent form input').first().focus();
+      }
     } else {
       $form.attr('data-form-open', 'true');
     }
