@@ -71,25 +71,24 @@ div.preview-landing-page
 	  .form-container
 	  {
 		position: relative;
+        width:275px;
+        margin:0 auto;
 
 		.form-box
 		{
 		  position: relative;
 		  display: flex;
-		  justify-content: center;
 
 		  .white-button, .blue-button
 		  {
 			background: white;
-			color: #434851;
+			color: #424751;
 			position: relative;
-			text-shadow: unset!important;
-			font-size: 12px;
+			text-shadow: none !important;
+			font-size: 14px;
 			letter-spacing: 0.25px;
-			width: 40%;
 			float: left;
-			padding: 0.6rem 0;
-
+			padding: 1rem;
 			&:hover
 			{
 			  cursor: pointer;
@@ -100,14 +99,13 @@ div.preview-landing-page
 		  {
 			background: #00a9e0;
 			color: white;
-			width: 22%;
 		  }
 		}
 
 		div.popup-form
 		{
 		  display: none;
-		  height: 500px;
+		  /* height: 500px; */
 		}
 
 		&[data-form-open='true']
@@ -135,9 +133,13 @@ div.preview-landing-page
 			margin: auto;
 			position: absolute;
 			background: #00a9e0;
-			width: 60%;
-			left: 22.5%;
-			right: 22.5%;
+			/*width:275px; */
+			left: 0;
+			right: 0;
+
+            .ccLeadContent {
+              border:none;
+            }
 
 			p.exit-button
 			{
@@ -226,18 +228,6 @@ div.preview-landing-page
 	width: 100%;
 	height: auto;
   }
-  .remodal[data-remodal-id='video-modal']
-  {
-    max-width: 750px;
-  }
-
-  @media only screen and (min-width: 768px)
-  {
-	.remodal[data-remodal-id='video-modal']
-	{
-	  width: 75%;
-	}
-  }
 
   div.alternating-images
   {
@@ -314,5 +304,17 @@ div.preview-landing-page
     left: 0;
     width: 100%;
     height: 100%;
+  }
+}
+.remodal[data-remodal-id='video-modal']
+{
+  max-width: 750px;
+}
+
+@media only screen and (min-width: 768px)
+{
+  .remodal[data-remodal-id='video-modal']
+  {
+    width: 75%;
   }
 }
