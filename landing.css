@@ -129,17 +129,6 @@ div.preview-landing-page {
         div.preview-landing-page .triple-pane .triple-pane-title span:after {
           left: 100%;
           margin-left: 15px; }
-  div.preview-landing-page #content.microsite {
-    margin: 0 !important;
-    width: 100% !important; }
-  div.preview-landing-page #side-nav {
-    display: none; }
-  div.preview-landing-page #column-container-1 {
-    width: 100%;
-    max-width: unset;
-    margin: 0; }
-  div.preview-landing-page #content-wrapper {
-    margin-top: -8px; }
   div.preview-landing-page .popup-video {
     width: 100%;
     height: auto; }
@@ -165,4 +154,17 @@ div.preview-landing-page {
         background: #bd5527;
         color: #fff; }
 
-/*# sourceMappingURL=landing.css.map */
+#content.microsite {
+  margin: 0 !important;
+  width: 100% !important; }
+
+#side-nav {
+  display: none; }
+
+#column-container-1 {
+  width: 100%;
+  max-width: unset;
+  margin: 0; }
+
+#content-wrapper {
+  margin-top: -8px; }

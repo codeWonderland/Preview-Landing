@@ -214,30 +214,6 @@ div.preview-landing-page
 	  }
 	}
   }
-
-  #content.microsite
-  {
-	margin: 0!important;
-	width: 100%!important;
-  }
-
-  #side-nav
-  {
-	display: none;
-  }
-
-  #column-container-1
-  {
-	width: 100%;
-	max-width: unset;
-	margin: 0;
-  }
-
-  #content-wrapper
-  {
-	margin-top: -8px;
-  }
-
   .popup-video
   {
 	width: 100%;
@@ -289,4 +265,26 @@ div.preview-landing-page
 	  }
 	}
   }
+}
+#content.microsite
+{
+  margin: 0!important;
+  width: 100%!important;
+}
+
+#side-nav
+{
+  display: none;
+}
+
+#column-container-1
+{
+  width: 100%;
+  max-width: unset;
+  margin: 0;
+}
+
+#content-wrapper
+{
+  margin-top: -8px;
 }
