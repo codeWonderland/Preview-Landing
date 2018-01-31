@@ -3,3 +3,5 @@
 .idea/vcs.xml
 .idea/workspace.xml
 .idea/Preview-Landing.iml
+.idea/*
+node_modules/*
