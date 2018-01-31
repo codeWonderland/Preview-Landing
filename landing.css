@@ -128,8 +128,17 @@ div.preview-landing-page {
               cursor: pointer; }
   div.preview-landing-page .cc-blue-header {
     color: #00A9E0; }
-    div.preview-landing-page .cc-blue-header h3 {
-      font-size: 1.25em; }
+  div.preview-landing-page h2.cc-blue-header {
+    text-align: center;
+    padding: 2rem;
+    width: 60%;
+    margin: auto;
+    line-height: 35px; }
+    div.preview-landing-page h2.cc-blue-header span.source {
+      font-size: 18px;
+      color: #7e7e7e;
+      font-weight: 300;
+      text-transform: uppercase; }
   div.preview-landing-page .triple-pane {
     margin-top: -6px;
     padding: 1rem;
@@ -142,9 +151,8 @@ div.preview-landing-page {
         font-size: 16px;
         font-weight: 600;
         text-transform: uppercase; }
-      div.preview-landing-page .triple-pane .single-pane.col-md-4 p {
-        margin-bottom: 0;
-        font-size: 14px; }
+      div.preview-landing-page .triple-pane .single-pane.col-md-4 h3 {
+        font-size: 1.25em; }
     div.preview-landing-page .triple-pane .triple-pane-title {
       line-height: 0.5;
       text-align: center; }
@@ -171,20 +179,48 @@ div.preview-landing-page {
     height: auto; }
   @media only screen and (min-width: 768px) {
     div.preview-landing-page div.alternating-images {
-      width: 85%;
+      width: 70%;
       margin: auto; } }
   div.preview-landing-page div.alternating-images .col-md-6 {
     padding: 0; }
-    div.preview-landing-page div.alternating-images .col-md-6.info-card {
+    div.preview-landing-page div.alternating-images .col-md-6.info-card, div.preview-landing-page div.alternating-images .col-md-6 .info-card {
       padding: 2rem;
-      height: 268.5px; }
-      div.preview-landing-page div.alternating-images .col-md-6.info-card[data-card-color="#00a9e0"] {
+      height: 268.5px;
+      text-align: center; }
+      div.preview-landing-page div.alternating-images .col-md-6.info-card .card-headline, div.preview-landing-page div.alternating-images .col-md-6 .info-card .card-headline {
+        font-size: 24px;
+        text-transform: uppercase; }
+        div.preview-landing-page div.alternating-images .col-md-6.info-card .card-headline:after, div.preview-landing-page div.alternating-images .col-md-6 .info-card .card-headline:after {
+          content: '';
+          display: block;
+          height: 3px;
+          width: 2.5rem;
+          background: white;
+          margin: 0.75rem auto; }
+      div.preview-landing-page div.alternating-images .col-md-6.info-card .card-link, div.preview-landing-page div.alternating-images .col-md-6 .info-card .card-link {
+        color: white;
+        font-weight: 600; }
+        div.preview-landing-page div.alternating-images .col-md-6.info-card .card-link:hover, div.preview-landing-page div.alternating-images .col-md-6 .info-card .card-link:hover {
+          color: white;
+          text-decoration: underline; }
+      div.preview-landing-page div.alternating-images .col-md-6.info-card .card-content, div.preview-landing-page div.alternating-images .col-md-6 .info-card .card-content {
+        font-weight: 300;
+        width: 85%;
+        text-align: center;
+        margin: auto; }
+      div.preview-landing-page div.alternating-images .col-md-6.info-card[data-card-color="#00a9e0"], div.preview-landing-page div.alternating-images .col-md-6 .info-card[data-card-color="#00a9e0"] {
         background: #00a9e0;
         color: #fff; }
-      div.preview-landing-page div.alternating-images .col-md-6.info-card[data-card-color="#e6e6e6"] {
+      div.preview-landing-page div.alternating-images .col-md-6.info-card[data-card-color="#e6e6e6"], div.preview-landing-page div.alternating-images .col-md-6 .info-card[data-card-color="#e6e6e6"] {
         background: #e6e6e6;
         color: #000; }
-      div.preview-landing-page div.alternating-images .col-md-6.info-card[data-card-color="#bd5527"] {
+        div.preview-landing-page div.alternating-images .col-md-6.info-card[data-card-color="#e6e6e6"] .card-headline:after, div.preview-landing-page div.alternating-images .col-md-6 .info-card[data-card-color="#e6e6e6"] .card-headline:after {
+          background: black; }
+        div.preview-landing-page div.alternating-images .col-md-6.info-card[data-card-color="#e6e6e6"] .card-link, div.preview-landing-page div.alternating-images .col-md-6 .info-card[data-card-color="#e6e6e6"] .card-link {
+          color: black; }
+          div.preview-landing-page div.alternating-images .col-md-6.info-card[data-card-color="#e6e6e6"] .card-link:hover, div.preview-landing-page div.alternating-images .col-md-6 .info-card[data-card-color="#e6e6e6"] .card-link:hover {
+            color: black; }
+      div.preview-landing-page div.alternating-images .col-md-6.info-card[data-card-color="#bd5527"], div.preview-landing-page div.alternating-images .col-md-6 .info-card[data-card-color="#bd5527"] {
         background: #bd5527;
         color: #fff; }
 
@@ -223,3 +259,5 @@ div.preview-landing-page {
 @media only screen and (min-width: 768px) {
   .remodal[data-remodal-id='video-modal'] {
     width: 75%; } }
+
+/*# sourceMappingURL=landing.css.map */

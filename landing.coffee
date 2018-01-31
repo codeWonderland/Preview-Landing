@@ -10,3 +10,6 @@ $('.blue-button,.white-button').on 'click', ->
 $('p.exit-button').on 'click', ->
   $form.attr('data-form-open', 'false')
   return
+
+$(document).ready ->
+  $('[data-card-color]').css('height' , $('.single-image')[0].clientHeight + 'px')
