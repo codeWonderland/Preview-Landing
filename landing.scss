@@ -3,6 +3,7 @@ div.preview-landing-page
   max-width: 1280px;
   width: 100%;
   margin: auto;
+  background: white;
 
   .video-container
   {
@@ -57,6 +58,13 @@ div.preview-landing-page
 	  z-index: 99;
 	  text-align: center;
 
+	  h1
+	  {
+		color: white;
+		font-weight: 400;
+		font-size: 40px;
+	  }
+
 	  .play-button
 	  {
 		width: 60px;
@@ -66,6 +74,7 @@ div.preview-landing-page
 
 	  .buffer-bottom
 	  {
+		font-size: 18px;
 		margin-bottom: 2.5rem;
 	  }
 
@@ -218,6 +227,13 @@ div.preview-landing-page
   .cc-blue-header
   {
 	color: #00A9E0;
+
+	&.h3
+	{
+	  font-size: 20px;
+	  font-weight: 600;
+	  margin-top: 1rem;
+	}
   }
 
   h2.cc-blue-header
@@ -227,6 +243,11 @@ div.preview-landing-page
 	width: 60%;
 	margin: auto;
 	line-height: 35px;
+
+	@media only screen and (max-width: 768px)
+	{
+	  width: 100%;
+	}
 
 	span.source {
 	  font-size: 18px;
@@ -244,9 +265,15 @@ div.preview-landing-page
 	color: #434851;
 	text-align: center;
 
+	.row
+	{
+	  width: 90%;
+	  margin: auto;
+	}
+
 	.single-pane.col-md-4
 	{
-	  padding: 3rem;
+	  padding: 2rem;
 
 	  p strong
 	  {
@@ -311,15 +338,23 @@ div.preview-landing-page
 	  margin: auto;
 	}
 
+	@media only screen and (max-width: 768px)
+	{
+	  .row.single-image img, .row.double-image img {
+
+		display: none;
+
+	  }
+	}
+
 	.col-md-6
 	{
 	  padding: 0;
 
 	  &.info-card, .info-card
 	  {
-		padding: 2rem;
-		height: 268.5px;
-		text-align: center;
+		padding: 3rem 5rem;
+		height: auto;
 
 		.card-headline
 		{
@@ -333,7 +368,7 @@ div.preview-landing-page
 			height: 3px;
 			width: 2.5rem;
 			background: white;
-			margin: 0.75rem auto;
+			margin: 1rem 0;
 		  }
 		}
 
@@ -352,9 +387,6 @@ div.preview-landing-page
 		.card-content
 		{
 		  font-weight: 300;
-		  width: 85%;
-		  text-align: center;
-		  margin: auto;
 		}
 
 		&[data-card-color="#00a9e0"]
@@ -395,7 +427,50 @@ div.preview-landing-page
 
   div.final-image
   {
-	// TODO
+	width: 100%;
+	position: relative;
+	text-align: center;
+
+	img
+	{
+	  width: 100%;
+	  max-width: 100%;
+	  height: auto;
+	}
+
+	.final-image-overlay
+	{
+	  @media only screen and (min-width: 768px)
+	  {
+		position: absolute;
+		width: 85%;
+		top: 25%;
+		left: 7.5%;
+		right: 75%;
+		color: white;
+	  }
+
+	  @media only screen and (max-width: 768px)
+	  {
+		background-color: #00a9e0;
+	  }
+
+	  .h2
+	  {
+		font-size: 48px;
+		text-shadow: -2px 2px 1px rgba(0,0,0,0.35);
+		margin-bottom: 0.5rem;
+		color: white;
+	  }
+
+	  p
+	  {
+		font-size: 19px;
+		text-shadow: -2px 2px 1px rgba(0,0,0,0.35);
+		width: 65%;
+		margin: auto;
+	  }
+	}
   }
 }
 
@@ -410,6 +485,12 @@ div.preview-landing-page
   display: none;
 }
 
+.userMarkup
+{
+  padding: 0!important;
+  margin-top: -1rem!important;
+}
+
 #column-container-1
 {
   width: 100%;
@@ -420,6 +501,11 @@ div.preview-landing-page
 #content-wrapper
 {
   margin-top: -8px;
+}
+
+#outer-container, #inner-container
+{
+  background: #f6f6f6!important;
 }
 
 .responsive-video-container
