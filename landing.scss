@@ -10,10 +10,14 @@ div.preview-landing-page
 	width: 100%;
 	height: auto;
 	max-height: 720px;
-	display: flex;
 	position: relative;
-	justify-content: center;
-	align-items: center;
+
+	@media only screen and (min-width: 768px)
+	{
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	}
 
 	.video-box
 	{
@@ -22,26 +26,15 @@ div.preview-landing-page
 	  max-height: 720px;
 	  overflow: hidden;
 
+	  @media only screen and (max-width: 768px)
+	  {
+		width: 100%;
+	  }
+
 	  .dynamic-video
 	  {
 		height: auto;
 		width: 100%;
-
-		@media only screen and (max-width: 768px)
-		{
-		  &.desktop
-		  {
-			display: none;
-		  }
-		}
-
-		@media only screen and (min-width: 768px)
-		{
-		  &.mobile
-		  {
-			display: none;
-		  }
-		}
 	  }
 	}
 	.video-overlay
@@ -49,18 +42,43 @@ div.preview-landing-page
 	  font-family: 'Lato', sans-serif;
 	  width: 100%;
 	  height: 100%;
-	  position: absolute;
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
 	  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
 	  color: white;
 	  z-index: 99;
 	  text-align: center;
 
+	  @media only screen and (max-width: 768px)
+	  {
+		margin-top: -7px;
+		padding-top: 2rem;
+		background: #e6e6e6;
+
+		h1
+		{
+		  color: #434851
+		}
+
+		p
+		{
+		  color: #434851;
+		}
+	  }
+
+	  @media only screen and (min-width: 768px)
+	  {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		h1
+		{
+		  color: white;
+		}
+	  }
+
 	  h1
 	  {
-		color: white;
 		font-weight: 400;
 		font-size: 40px;
 	  }
@@ -70,6 +88,22 @@ div.preview-landing-page
 		width: 60px;
 		height: 60px;
 		margin-bottom: 2rem;
+
+		@media only screen and (min-width: 768px)
+		{
+		  &.mobile
+		  {
+			display: none;
+		  }
+		}
+
+		@media only screen and (max-width: 768px)
+		{
+		  &.desktop
+		  {
+			display: none;
+		  }
+		}
 	  }
 
 	  .buffer-bottom
@@ -83,6 +117,24 @@ div.preview-landing-page
 		position: relative;
 		width: 275px;
 		margin: 0 auto;
+
+		&.mobile-scrolling
+		{
+		  position: fixed;
+		  z-index: 9999;
+		  top: 20px;
+		  left: 14%;
+		  right: 14%;
+		  box-shadow: 5px 5px 10px rgba(0,0,0,0.35);
+		}
+
+		&.desktop-scrolling
+		{
+		  position: fixed;
+		  top: 20px;
+		  left: 2%;
+		  box-shadow: 5px 5px 10px rgba(0,0,0,0.35);
+		}
 
 		.form-box
 		{
@@ -116,6 +168,7 @@ div.preview-landing-page
 		div.popup-form
 		{
 		  display: none;
+		  z-index: 99;
 		  /* height: 500px; */
 		}
 
@@ -283,9 +336,14 @@ div.preview-landing-page
 		text-transform: uppercase;
 	  }
 
-	  h3 // this is the same as .cc-blue-header h3 {}
+	  .h3
 	  {
 		font-size: 1.25em;
+	  }
+
+	  a p
+	  {
+		color: #424751!important;
 	  }
 	}
 
@@ -341,6 +399,9 @@ div.preview-landing-page
 
 	@media only screen and (max-width: 768px)
 	{
+	  width: 100%;
+	  overflow: hidden;
+	  
 	  .row.single-image img, .row.double-image img {
 
 		display: none;
@@ -454,6 +515,8 @@ div.preview-landing-page
 	  @media only screen and (max-width: 768px)
 	  {
 		background-color: #00a9e0;
+		margin-bottom: -1.5rem;
+		padding-bottom: 1.5rem;
 	  }
 
 	  .h2
@@ -469,6 +532,7 @@ div.preview-landing-page
 		font-size: 19px;
 		text-shadow: -2px 2px 1px rgba(0,0,0,0.35);
 		width: 65%;
+		color: white;
 		margin: auto;
 	  }
 	}

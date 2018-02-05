@@ -7,44 +7,61 @@ div.preview-landing-page {
     width: 100%;
     height: auto;
     max-height: 720px;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center; }
+    position: relative; }
+    @media only screen and (min-width: 768px) {
+      div.preview-landing-page .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center; } }
     div.preview-landing-page .video-container .video-box {
       width: 1280px;
       height: auto;
       max-height: 720px;
       overflow: hidden; }
+      @media only screen and (max-width: 768px) {
+        div.preview-landing-page .video-container .video-box {
+          width: 100%; } }
       div.preview-landing-page .video-container .video-box .dynamic-video {
         height: auto;
         width: 100%; }
-        @media only screen and (max-width: 768px) {
-          div.preview-landing-page .video-container .video-box .dynamic-video.desktop {
-            display: none; } }
-        @media only screen and (min-width: 768px) {
-          div.preview-landing-page .video-container .video-box .dynamic-video.mobile {
-            display: none; } }
     div.preview-landing-page .video-container .video-overlay {
       font-family: 'Lato', sans-serif;
       width: 100%;
       height: 100%;
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
       color: white;
       z-index: 99;
       text-align: center; }
+      @media only screen and (max-width: 768px) {
+        div.preview-landing-page .video-container .video-overlay {
+          margin-top: -7px;
+          padding-top: 2rem;
+          background: #e6e6e6; }
+          div.preview-landing-page .video-container .video-overlay h1 {
+            color: #434851; }
+          div.preview-landing-page .video-container .video-overlay p {
+            color: #434851; } }
+      @media only screen and (min-width: 768px) {
+        div.preview-landing-page .video-container .video-overlay {
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          div.preview-landing-page .video-container .video-overlay h1 {
+            color: white; } }
       div.preview-landing-page .video-container .video-overlay h1 {
-        color: white;
         font-weight: 400;
         font-size: 40px; }
       div.preview-landing-page .video-container .video-overlay .play-button {
         width: 60px;
         height: 60px;
         margin-bottom: 2rem; }
+        @media only screen and (min-width: 768px) {
+          div.preview-landing-page .video-container .video-overlay .play-button.mobile {
+            display: none; } }
+        @media only screen and (max-width: 768px) {
+          div.preview-landing-page .video-container .video-overlay .play-button.desktop {
+            display: none; } }
       div.preview-landing-page .video-container .video-overlay .buffer-bottom {
         font-size: 18px;
         margin-bottom: 2.5rem; }
@@ -52,6 +69,18 @@ div.preview-landing-page {
         position: relative;
         width: 275px;
         margin: 0 auto; }
+        div.preview-landing-page .video-container .video-overlay .form-container.mobile-scrolling {
+          position: fixed;
+          z-index: 9999;
+          top: 20px;
+          left: 14%;
+          right: 14%;
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35); }
+        div.preview-landing-page .video-container .video-overlay .form-container.desktop-scrolling {
+          position: fixed;
+          top: 20px;
+          left: 2%;
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35); }
         div.preview-landing-page .video-container .video-overlay .form-container .form-box {
           position: relative;
           display: flex; }
@@ -72,6 +101,7 @@ div.preview-landing-page {
             color: white; }
         div.preview-landing-page .video-container .video-overlay .form-container div.popup-form {
           display: none;
+          z-index: 99;
           /* height: 500px; */ }
         div.preview-landing-page .video-container .video-overlay .form-container[data-form-open='true'] .blue-button {
           background: gray; }
@@ -168,8 +198,10 @@ div.preview-landing-page {
         font-size: 16px;
         font-weight: 600;
         text-transform: uppercase; }
-      div.preview-landing-page .triple-pane .single-pane.col-md-4 h3 {
+      div.preview-landing-page .triple-pane .single-pane.col-md-4 .h3 {
         font-size: 1.25em; }
+      div.preview-landing-page .triple-pane .single-pane.col-md-4 a p {
+        color: #424751 !important; }
     div.preview-landing-page .triple-pane .triple-pane-title {
       line-height: 0.5;
       text-align: center; }
@@ -199,8 +231,11 @@ div.preview-landing-page {
       width: 70%;
       margin: auto; } }
   @media only screen and (max-width: 768px) {
-    div.preview-landing-page div.alternating-images .row.single-image img, div.preview-landing-page div.alternating-images .row.double-image img {
-      display: none; } }
+    div.preview-landing-page div.alternating-images {
+      width: 100%;
+      overflow: hidden; }
+      div.preview-landing-page div.alternating-images .row.single-image img, div.preview-landing-page div.alternating-images .row.double-image img {
+        display: none; } }
   div.preview-landing-page div.alternating-images .col-md-6 {
     padding: 0; }
     div.preview-landing-page div.alternating-images .col-md-6.info-card, div.preview-landing-page div.alternating-images .col-md-6 .info-card {
@@ -257,7 +292,9 @@ div.preview-landing-page {
         color: white; } }
     @media only screen and (max-width: 768px) {
       div.preview-landing-page div.final-image .final-image-overlay {
-        background-color: #00a9e0; } }
+        background-color: #00a9e0;
+        margin-bottom: -1.5rem;
+        padding-bottom: 1.5rem; } }
     div.preview-landing-page div.final-image .final-image-overlay .h2 {
       font-size: 48px;
       text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.35);
@@ -267,6 +304,7 @@ div.preview-landing-page {
       font-size: 19px;
       text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.35);
       width: 65%;
+      color: white;
       margin: auto; }
 
 #content.microsite {
@@ -311,3 +349,5 @@ div.preview-landing-page {
 @media only screen and (min-width: 768px) {
   .remodal[data-remodal-id='video-modal'] {
     width: 75%; } }
+
+/*# sourceMappingURL=landing.css.map */
