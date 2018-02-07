@@ -3,16 +3,21 @@ div.preview-landing-page
   max-width: 1280px;
   width: 100%;
   margin: auto;
+  background: white;
 
   .video-container
   {
 	width: 100%;
 	height: auto;
 	max-height: 720px;
-	display: flex;
 	position: relative;
-	justify-content: center;
-	align-items: center;
+
+	@media only screen and (min-width: 768px)
+	{
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	}
 
 	.video-box
 	{
@@ -21,18 +26,68 @@ div.preview-landing-page
 	  max-height: 720px;
 	  overflow: hidden;
 
+	  @media only screen and (max-width: 768px)
+	  {
+		width: 100%;
+	  }
+
 	  .dynamic-video
 	  {
 		height: auto;
 		width: 100%;
+	  }
+	}
+	.video-overlay
+	{
+	  font-family: 'Lato', sans-serif;
+	  width: 100%;
+	  height: 100%;
+	  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+	  color: white;
+	  z-index: 99;
+	  text-align: center;
 
-		@media only screen and (max-width: 768px)
+	  @media only screen and (max-width: 768px)
+	  {
+		margin-top: -7px;
+		padding-top: 2rem;
+		background: #e6e6e6;
+
+		h1
 		{
-		  &.desktop
-		  {
-			display: none;
-		  }
+		  color: #434851
 		}
+
+		p
+		{
+		  color: #434851;
+		}
+	  }
+
+	  @media only screen and (min-width: 768px)
+	  {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		h1
+		{
+		  color: white;
+		}
+	  }
+
+	  h1
+	  {
+		font-weight: 400;
+		font-size: 40px;
+	  }
+
+	  .play-button
+	  {
+		width: 60px;
+		height: 60px;
+		margin-bottom: 2rem;
 
 		@media only screen and (min-width: 768px)
 		{
@@ -41,31 +96,19 @@ div.preview-landing-page
 			display: none;
 		  }
 		}
-	  }
-	}
-	.video-overlay
-	{
-	  font-family: 'Lato', sans-serif;
-	  width: 100%;
-	  height: 100%;
-	  position: absolute;
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
-	  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
-	  color: white;
-	  z-index: 99;
-	  text-align: center;
 
-	  .play-button
-	  {
-		width: 60px;
-		height: 60px;
-		margin-bottom: 2rem;
+		@media only screen and (max-width: 768px)
+		{
+		  &.desktop
+		  {
+			display: none;
+		  }
+		}
 	  }
 
 	  .buffer-bottom
 	  {
+		font-size: 18px;
 		margin-bottom: 2.5rem;
 	  }
 
@@ -74,6 +117,24 @@ div.preview-landing-page
 		position: relative;
 		width: 275px;
 		margin: 0 auto;
+
+		&.mobile-scrolling
+		{
+		  position: fixed;
+		  z-index: 9999;
+		  top: 20px;
+		  left: 14%;
+		  right: 14%;
+		  box-shadow: 5px 5px 10px rgba(0,0,0,0.35);
+		}
+
+		&.desktop-scrolling
+		{
+		  position: fixed;
+		  top: 20px;
+		  left: 2%;
+		  box-shadow: 5px 5px 10px rgba(0,0,0,0.35);
+		}
 
 		.form-box
 		{
@@ -107,6 +168,7 @@ div.preview-landing-page
 		div.popup-form
 		{
 		  display: none;
+		  z-index: 99;
 		  /* height: 500px; */
 		}
 
@@ -219,6 +281,39 @@ div.preview-landing-page
   .cc-blue-header
   {
 	color: #00A9E0;
+
+	&.h3
+	{
+	  font-size: 20px;
+	  font-weight: 600;
+	  margin-top: 1rem;
+
+	  @media only screen and (max-width: 768px)
+	  {
+		margin-top: 0.5rem;
+		margin-bottom: 0;
+	  }
+	}
+
+	&.h2
+	{
+	  text-align: center;
+	  padding: 2rem;
+	  width: 60%;
+	  margin: 2rem auto;
+	  line-height: 35px;
+	  font-size: 24px;
+
+	  em
+	  {
+		color: #00a9e0;
+	  }
+
+	  @media only screen and (max-width: 768px)
+	  {
+		width: 100%;
+	  }
+	}
   }
 
   h2.cc-blue-header
@@ -228,12 +323,18 @@ div.preview-landing-page
 	width: 60%;
 	margin: auto;
 	line-height: 35px;
+	font-size: 24px;
+
+	@media only screen and (max-width: 768px)
+	{
+	  width: 100%;
+	}
 
 	span.source {
 	  font-size: 18px;
 	  color: #7e7e7e;
 	  font-weight: 300;
-	  text-transform: uppercase;
+	  font-style: italic;
 	}
   }
 
@@ -245,9 +346,20 @@ div.preview-landing-page
 	color: #434851;
 	text-align: center;
 
+	.row
+	{
+	  width: 90%;
+	  margin: auto;
+	}
+
 	.single-pane.col-md-4
 	{
-	  padding: 3rem;
+	  padding: 2rem;
+
+	  img
+	  {
+		margin-top: 1rem;
+	  }
 
 	  p strong
 	  {
@@ -256,9 +368,25 @@ div.preview-landing-page
 		text-transform: uppercase;
 	  }
 
-	  h3 // this is the same as .cc-blue-header h3 {}
+	  .h3
 	  {
 		font-size: 1.25em;
+	  }
+
+	  @media only screen and (max-width: 768px)
+	  {
+		padding: 1rem;
+
+		a
+		{
+		  text-decoration: none;
+
+		  p:not(.h3)
+		  {
+			margin: 0;
+			color: #236192;
+		  }
+		}
 	  }
 	}
 
@@ -312,15 +440,26 @@ div.preview-landing-page
 	  margin: auto;
 	}
 
+	@media only screen and (max-width: 768px)
+	{
+	  width: 100%;
+	  overflow: hidden;
+	  
+	  .row.single-image img, .row.double-image img {
+
+		display: none;
+
+	  }
+	}
+
 	.col-md-6
 	{
 	  padding: 0;
 
 	  &.info-card, .info-card
 	  {
-		padding: 2rem;
-		height: 268.5px;
-		text-align: center;
+		padding: 3rem 5rem;
+		height: auto;
 
 		.card-headline
 		{
@@ -334,7 +473,7 @@ div.preview-landing-page
 			height: 3px;
 			width: 2.5rem;
 			background: white;
-			margin: 0.75rem auto;
+			margin: 1rem 0;
 		  }
 		}
 
@@ -353,9 +492,6 @@ div.preview-landing-page
 		.card-content
 		{
 		  font-weight: 300;
-		  width: 85%;
-		  text-align: center;
-		  margin: auto;
 		}
 
 		&[data-card-color="#00a9e0"]
@@ -396,7 +532,58 @@ div.preview-landing-page
 
   div.final-image
   {
-	// TODO
+	width: 100%;
+	position: relative;
+	text-align: center;
+
+	img
+	{
+	  width: 100%;
+	  max-width: 100%;
+	  height: auto;
+	}
+
+	.final-image-overlay
+	{
+	  @media only screen and (min-width: 768px)
+	  {
+		position: absolute;
+		width: 85%;
+		top: 25%;
+		left: 7.5%;
+		right: 75%;
+		color: white;
+	  }
+
+	  @media only screen and (max-width: 768px)
+	  {
+		background-color: #00a9e0;
+		margin-bottom: -1.5rem;
+		padding: 1rem 0 2.5rem 0;
+
+		a
+		{
+		  text-decoration: none;
+		}
+	  }
+
+	  .h2
+	  {
+		font-size: 48px;
+		text-shadow: -2px 2px 1px rgba(0,0,0,0.35);
+		margin-bottom: 0.5rem;
+		color: white;
+	  }
+
+	  p
+	  {
+		font-size: 19px;
+		text-shadow: -2px 2px 1px rgba(0,0,0,0.35);
+		width: 65%;
+		color: white;
+		margin: auto;
+	  }
+	}
   }
 }
 
@@ -411,6 +598,12 @@ div.preview-landing-page
   display: none;
 }
 
+.userMarkup
+{
+  padding: 0!important;
+  margin-top: -1rem!important;
+}
+
 #column-container-1
 {
   width: 100%;
@@ -421,6 +614,11 @@ div.preview-landing-page
 #content-wrapper
 {
   margin-top: -8px;
+}
+
+#outer-container, #inner-container
+{
+  background: #f6f6f6!important;
 }
 
 .responsive-video-container
