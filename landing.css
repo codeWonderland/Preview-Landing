@@ -169,12 +169,29 @@ div.preview-landing-page {
       font-size: 20px;
       font-weight: 600;
       margin-top: 1rem; }
+      @media only screen and (max-width: 768px) {
+        div.preview-landing-page .cc-blue-header.h3 {
+          margin-top: 0.5rem;
+          margin-bottom: 0; } }
+    div.preview-landing-page .cc-blue-header.h2 {
+      text-align: center;
+      padding: 2rem;
+      width: 60%;
+      margin: 2rem auto;
+      line-height: 35px;
+      font-size: 24px; }
+      div.preview-landing-page .cc-blue-header.h2 em {
+        color: #00a9e0; }
+      @media only screen and (max-width: 768px) {
+        div.preview-landing-page .cc-blue-header.h2 {
+          width: 100%; } }
   div.preview-landing-page h2.cc-blue-header {
     text-align: center;
     padding: 2rem;
     width: 60%;
     margin: auto;
-    line-height: 35px; }
+    line-height: 35px;
+    font-size: 24px; }
     @media only screen and (max-width: 768px) {
       div.preview-landing-page h2.cc-blue-header {
         width: 100%; } }
@@ -182,7 +199,7 @@ div.preview-landing-page {
       font-size: 18px;
       color: #7e7e7e;
       font-weight: 300;
-      text-transform: uppercase; }
+      font-style: italic; }
   div.preview-landing-page .triple-pane {
     margin-top: -6px;
     padding: 1rem;
@@ -194,14 +211,22 @@ div.preview-landing-page {
       margin: auto; }
     div.preview-landing-page .triple-pane .single-pane.col-md-4 {
       padding: 2rem; }
+      div.preview-landing-page .triple-pane .single-pane.col-md-4 img {
+        margin-top: 1rem; }
       div.preview-landing-page .triple-pane .single-pane.col-md-4 p strong {
         font-size: 16px;
         font-weight: 600;
         text-transform: uppercase; }
       div.preview-landing-page .triple-pane .single-pane.col-md-4 .h3 {
         font-size: 1.25em; }
-      div.preview-landing-page .triple-pane .single-pane.col-md-4 a p {
-        color: #424751 !important; }
+      @media only screen and (max-width: 768px) {
+        div.preview-landing-page .triple-pane .single-pane.col-md-4 {
+          padding: 1rem; }
+          div.preview-landing-page .triple-pane .single-pane.col-md-4 a {
+            text-decoration: none; }
+            div.preview-landing-page .triple-pane .single-pane.col-md-4 a p:not(.h3) {
+              margin: 0;
+              color: #236192; } }
     div.preview-landing-page .triple-pane .triple-pane-title {
       line-height: 0.5;
       text-align: center; }
@@ -294,7 +319,9 @@ div.preview-landing-page {
       div.preview-landing-page div.final-image .final-image-overlay {
         background-color: #00a9e0;
         margin-bottom: -1.5rem;
-        padding-bottom: 1.5rem; } }
+        padding: 1rem 0 2.5rem 0; }
+        div.preview-landing-page div.final-image .final-image-overlay a {
+          text-decoration: none; } }
     div.preview-landing-page div.final-image .final-image-overlay .h2 {
       font-size: 48px;
       text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.35);

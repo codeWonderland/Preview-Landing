@@ -287,6 +287,32 @@ div.preview-landing-page
 	  font-size: 20px;
 	  font-weight: 600;
 	  margin-top: 1rem;
+
+	  @media only screen and (max-width: 768px)
+	  {
+		margin-top: 0.5rem;
+		margin-bottom: 0;
+	  }
+	}
+
+	&.h2
+	{
+	  text-align: center;
+	  padding: 2rem;
+	  width: 60%;
+	  margin: 2rem auto;
+	  line-height: 35px;
+	  font-size: 24px;
+
+	  em
+	  {
+		color: #00a9e0;
+	  }
+
+	  @media only screen and (max-width: 768px)
+	  {
+		width: 100%;
+	  }
 	}
   }
 
@@ -297,6 +323,7 @@ div.preview-landing-page
 	width: 60%;
 	margin: auto;
 	line-height: 35px;
+	font-size: 24px;
 
 	@media only screen and (max-width: 768px)
 	{
@@ -307,7 +334,7 @@ div.preview-landing-page
 	  font-size: 18px;
 	  color: #7e7e7e;
 	  font-weight: 300;
-	  text-transform: uppercase;
+	  font-style: italic;
 	}
   }
 
@@ -329,6 +356,11 @@ div.preview-landing-page
 	{
 	  padding: 2rem;
 
+	  img
+	  {
+		margin-top: 1rem;
+	  }
+
 	  p strong
 	  {
 		font-size: 16px;
@@ -341,9 +373,20 @@ div.preview-landing-page
 		font-size: 1.25em;
 	  }
 
-	  a p
+	  @media only screen and (max-width: 768px)
 	  {
-		color: #424751!important;
+		padding: 1rem;
+
+		a
+		{
+		  text-decoration: none;
+
+		  p:not(.h3)
+		  {
+			margin: 0;
+			color: #236192;
+		  }
+		}
 	  }
 	}
 
@@ -516,7 +559,12 @@ div.preview-landing-page
 	  {
 		background-color: #00a9e0;
 		margin-bottom: -1.5rem;
-		padding-bottom: 1.5rem;
+		padding: 1rem 0 2.5rem 0;
+
+		a
+		{
+		  text-decoration: none;
+		}
 	  }
 
 	  .h2

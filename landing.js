@@ -17,7 +17,7 @@
           };
           scrollFunction = function() {
             if (mq.matches) {
-              if ($(document).height() - $(window).scrollTop() - $(window).height() < 1123) {
+              if ($(this).scrollTop() >= 646) {
                 $(document.getElementsByClassName("form-container")[0]).addClass('desktop-scrolling');
               } else {
                 $(document.getElementsByClassName("form-container")[0]).removeClass('desktop-scrolling');
