@@ -3,7 +3,6 @@
   var ccWaitTries, mq;
 
   ccWaitTries = 10;
-
   mq = window.matchMedia("(min-width: 768px)");
 
   (function() {
@@ -37,6 +36,12 @@
               $form.attr('data-form-open', 'true');
             }
           });
+          $('.blue-button,.white-button').on('click', function() {
+            if ($form.attr('data-form-open') === 'true') {
+              $form.attr('data-form-open', 'false');
+              if ($('.ccLeadContent form input').length) {
+                $('.ccLeadContent form input').first().focus();
+            }
           $('p.exit-button').on('click', function() {
             $form.attr('data-form-open', 'false');
           });
