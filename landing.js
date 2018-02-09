@@ -10,7 +10,7 @@
     if (window.$) {
       (function($) {
         $(document).ready(function() {
-          var $form, scrollFunction;
+          var $form, scrollFunction, sendGaEvent;
           $form = $(document.getElementsByClassName('form-container')[0]);
           window.onscroll = function() {
             scrollFunction();
@@ -44,14 +44,24 @@
             $('[data-card-color]').css('height', $('.single-image')[0].clientHeight + 'px');
             $('.double-image img').css('height', $('.double-image img')[0].clientHeight + 'px');
           }
-          $('a').on('click', function() {
+          $('.nav-item a').on('click', function(e) {
+            e.preventDefault();
             ga('send', {
-              hitType: 'event',
-              eventCategory: 'Preview Landing Page',
-              eventAction: 'Link Click',
-              eventLabel: this.innerHTML
+              hitType: "event",
+              eventCategory: "Landing Page",
+              eventAction: "Preview Landing Page SP18 Link Click",
+              eventLabel: "Nav Link Click: " + this.innerHTML
             });
+            document.location = $(this).attr("href");
           });
+          return sendGaEvent = function(linkType) {
+            return ga('send', {
+              hitType: "event",
+              eventCategory: "Landing Page",
+              eventAction: "Preview Landing Page SP18 Link Click",
+              eventLabel: linkType + " Click: " + this.innerHTML
+            });
+          };
         });
       })(jQuery);
     } else {

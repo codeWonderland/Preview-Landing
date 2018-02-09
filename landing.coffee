@@ -39,15 +39,25 @@ mq = window.matchMedia( "(min-width: 768px)" )
           $('[data-card-color]').css('height' , $('.single-image')[0].clientHeight + 'px')
           $('.double-image img').css('height' , $('.double-image img')[0].clientHeight + 'px')
 
-        $('a').on 'click', ->
+        $('.nav-item a').on 'click', (e) ->
+          e.preventDefault()
           ga('send',
-            hitType: 'event',
-            eventCategory: 'Preview Landing Page',
-            eventAction: 'Link Click',
-            eventLabel: this.innerHTML
+            hitType : "event",
+            eventCategory : "Landing Page",
+            eventAction : "Preview Landing Page SP18 Link Click",
+            eventLabel : "Nav Link Click: #{this.innerHTML}"
           )
+          document.location = $(this).attr "href"
           return
-        return
+
+        sendGaEvent = (linkType) ->
+          ga('send',
+            hitType : "event",
+            eventCategory : "Landing Page",
+            eventAction : "Preview Landing Page SP18 Link Click",
+            eventLabel : "#{linkType} Click: #{this.innerHTML}"
+          )
+
       return
     ) jQuery
   else
