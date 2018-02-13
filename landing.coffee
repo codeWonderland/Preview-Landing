@@ -5,6 +5,9 @@ mq = window.matchMedia( "(min-width: 768px)" )
   if window.$
     (($) ->
       $(document).ready ->
+
+        $('video.dynamic-video')[0].play()
+
         $form = $(document.getElementsByClassName('form-container')[0])
 
         window.onscroll = ->

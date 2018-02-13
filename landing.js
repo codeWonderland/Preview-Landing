@@ -11,6 +11,7 @@
       (function($) {
         $(document).ready(function() {
           var $form, callback, config, modal, modalPlayer, observer, scrollFunction;
+          $('video.dynamic-video')[0].play();
           $form = $(document.getElementsByClassName('form-container')[0]);
           window.onscroll = function() {
             scrollFunction();
