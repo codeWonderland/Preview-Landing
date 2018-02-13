@@ -12,7 +12,7 @@ mq = window.matchMedia( "(min-width: 768px)" )
           return
 
         scrollFunction = ->
-          if mq.matches #desktop
+          if mq.matches # desktop
             if ($(this).scrollTop() >= 646)
               $(document.getElementsByClassName("form-container")[0]).addClass('desktop-scrolling')
             else
@@ -42,6 +42,35 @@ mq = window.matchMedia( "(min-width: 768px)" )
           $('[data-card-color]').css('height' , $('.single-image')[0].clientHeight + 'px')
           $('.double-image img').css('height' , $('.double-image img')[0].clientHeight + 'px')
 
+        @sendGaEvent = (linkType) ->
+          ga('send',
+            hitType : "event",
+            eventCategory : "Landing Page",
+            eventAction : "Preview Landing Page SP18 Link Click",
+            eventLabel : "#{linkType} Click: #{this.innerHTML}"
+          )
+          return
+
+        modal = $('[data-remodal-id="video-modal"]')[0]
+        modalPlayer = new Vimeo.Player('remodal-video')
+
+        config =
+          attributes: true,
+          attributeFilter: ['class']
+
+        callback = (mutationList) ->
+          for mutation in mutationList
+            if $(modal).hasClass('remodal-is-opened')
+              $('video.dynamic-video')[0].pause()
+            else # Remodal just closed, so we need to start the background video and pause the vimeo video
+              $('video.dynamic-video')[0].play()
+              modalPlayer.pause()
+          return
+
+        observer = new MutationObserver(callback)
+
+        observer.observe(modal, config)
+
         $('.nav-item a').on 'click', (e) ->
           e.preventDefault()
           ga('send',
@@ -52,15 +81,7 @@ mq = window.matchMedia( "(min-width: 768px)" )
           )
           document.location = $(this).attr "href"
           return
-
-        sendGaEvent = (linkType) ->
-          ga('send',
-            hitType : "event",
-            eventCategory : "Landing Page",
-            eventAction : "Preview Landing Page SP18 Link Click",
-            eventLabel : "#{linkType} Click: #{this.innerHTML}"
-          )
-
+        return
       return
     ) jQuery
   else

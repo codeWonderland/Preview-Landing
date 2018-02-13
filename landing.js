@@ -10,7 +10,7 @@
     if (window.$) {
       (function($) {
         $(document).ready(function() {
-          var $form, scrollFunction, sendGaEvent;
+          var $form, callback, config, modal, modalPlayer, observer, scrollFunction;
           $form = $(document.getElementsByClassName('form-container')[0]);
           window.onscroll = function() {
             scrollFunction();
@@ -47,6 +47,34 @@
             $('[data-card-color]').css('height', $('.single-image')[0].clientHeight + 'px');
             $('.double-image img').css('height', $('.double-image img')[0].clientHeight + 'px');
           }
+          this.sendGaEvent = function(linkType) {
+            ga('send', {
+              hitType: "event",
+              eventCategory: "Landing Page",
+              eventAction: "Preview Landing Page SP18 Link Click",
+              eventLabel: linkType + " Click: " + this.innerHTML
+            });
+          };
+          modal = $('[data-remodal-id="video-modal"]')[0];
+          modalPlayer = new Vimeo.Player('remodal-video');
+          config = {
+            attributes: true,
+            attributeFilter: ['class']
+          };
+          callback = function(mutationList) {
+            var i, len, mutation;
+            for (i = 0, len = mutationList.length; i < len; i++) {
+              mutation = mutationList[i];
+              if ($(modal).hasClass('remodal-is-opened')) {
+                $('video.dynamic-video')[0].pause();
+              } else {
+                $('video.dynamic-video')[0].play();
+                modalPlayer.pause();
+              }
+            }
+          };
+          observer = new MutationObserver(callback);
+          observer.observe(modal, config);
           $('.nav-item a').on('click', function(e) {
             e.preventDefault();
             ga('send', {
@@ -57,14 +85,6 @@
             });
             document.location = $(this).attr("href");
           });
-          return sendGaEvent = function(linkType) {
-            return ga('send', {
-              hitType: "event",
-              eventCategory: "Landing Page",
-              eventAction: "Preview Landing Page SP18 Link Click",
-              eventLabel: linkType + " Click: " + this.innerHTML
-            });
-          };
         });
       })(jQuery);
     } else {
