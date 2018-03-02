@@ -1,7 +1,7 @@
 ccWaitTries = 10
 mq = window.matchMedia( "(min-width: 768px)" )
 
-(->
+(waitForJQuery ->
   if window.$
     (($) ->
       $(document).ready ->

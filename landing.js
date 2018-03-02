@@ -6,7 +6,7 @@
 
   mq = window.matchMedia("(min-width: 768px)");
 
-  (function() {
+  (waitForJQuery(function() {
     if (window.$) {
       (function($) {
         $(document).ready(function() {
@@ -94,7 +94,7 @@
         setTimeout(waitForJQuery, 50);
       }
     }
-  })();
+  }))();
 
 }).call(this);
 
