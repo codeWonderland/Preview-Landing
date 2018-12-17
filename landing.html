@@ -1,5 +1,5 @@
 <p><link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" /></p>
-<style><!--
+<style>
 @font-face {
     font-family: "Archer Book";
     src: url("documents/fonts/Archer-Book.woff") format('woff');
@@ -79,7 +79,7 @@ div.promo h2::after {
     margin: 1.75rem auto 0.75rem;
 }
 div.preview-landing-page .triple-pane {
-    padding: 1rem 1rem 2rem !important;
+    padding: 3rem 1rem !important;
 }
 body #outer-container, body #inner-container {
     background: #000 !important;
@@ -247,11 +247,11 @@ body div.preview-landing-page .cc-blue-header.h2 {
         font-size: 17px;
         line-height: 23px;
         margin-top: 6px;
-    }  
+    }
     span.quo-attr em {
         font-size: 16px;
     }
-    div.social { 
+    div.social {
         display: none;
     }
     div.contact {
@@ -262,9 +262,9 @@ body div.preview-landing-page .cc-blue-header.h2 {
     }
 }
 .triple-pane a {
-        color: #236192;
-        font-weight: 700;
-    }
+    color: #236192;
+    font-weight: 700;
+}
 .info-card p:not(.card-headline):not(.card-content) {
     font-size: 26px;
 }
@@ -316,22 +316,23 @@ img.logo {
     p.slug {
         font-size: 48px !important;
     }
-    div.preview-landing-page .triple-pane .single-pane.col-md-4 img {
-        width: 35%;
+    div.preview-landing-page .triple-pane .single-pane.col-md-3 img {
+        width: 31%;
         margin-bottom: 0;
         padding-bottom: 0;
     }
 }
 @media only screen and (max-width: 768px) {
     div.triple-pane img {
-        width: 60%;
+        width: 40%;
+        margin-top: 2rem;
     }
     img.logo {
         width: 80%;
         margin-top: -30px;
     }
-    div.breadcrumbs { 
-        display: none; 
+    div.breadcrumbs {
+        display: none;
     }
     nav.secondaryNav {
         display: none;
@@ -353,7 +354,7 @@ div.social-connect-icons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-        -ms-flex-pack: distribute;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     margin: 2rem auto;
     max-width: 350px;
@@ -361,11 +362,11 @@ div.social-connect-icons {
 img.social-icon {
     width: 40px;
     height: 40px;
-        -o-object-fit: cover;
+    -o-object-fit: cover;
     object-fit: cover;
     opacity: 0.5;
-        -webkit-transition: 0.2s all ease-out;
-        -o-transition: 0.2s all ease-out;
+    -webkit-transition: 0.2s all ease-out;
+    -o-transition: 0.2s all ease-out;
     transition: 0.2s all ease-out;
     padding: 0;
 }
@@ -409,37 +410,15 @@ div.social-connect-icons a {
 #footer {
     margin-top: -10px !important;
 }
---></style>
+</style>
 <div class="preview-landing-page">
     <div class="video-container">
-        <div class="video-box desktop">
-            <video width="320" 
-                height="240" 
-                preload="preload" 
-                class="dynamic-video" 
-                autoplay="autoplay" 
-                loop="loop" 
-                muted="muted">
-                <source src="Media/Preview-Landing-Page/preview.mp4" 
-                    type="video/mp4" /> 
-            </video>
-        </div>
+        <div class="video-box desktop"><video width="320" height="240" preload="preload" class="dynamic-video" autoplay="autoplay" loop="loop" muted="muted"><source src="Media/Preview-Landing-Page/preview.mp4" type="video/mp4" /> </video></div>
         <div class="video-overlay">
-            <div class="video-overlay-content">
-                <a class="desktop" 
-                    href="#" 
-                    onclick="sendGaEvent('Video Modal')" 
-                    data-remodal-target="video-modal"> 
-                    <img alt="play button" 
-                    class="play-button" 
-                    src="https://lh3.googleusercontent.com/-0pBrsfEFB5s/WmpB5NBHTiI/AAAAAAAAEYE/TVvORG9WLoYQTgEMdmeHVuuctYmUM4oIgCK8BGAs/s105/2018-01-25.png" />
-                </a>
+            <div class="video-overlay-content"><a class="desktop" href="#" onclick="sendGaEvent('Video Modal')" data-remodal-target="video-modal"> <img alt="play button" class="play-button" src="https://lh3.googleusercontent.com/-0pBrsfEFB5s/WmpB5NBHTiI/AAAAAAAAEYE/TVvORG9WLoYQTgEMdmeHVuuctYmUM4oIgCK8BGAs/s105/2018-01-25.png" /> </a>
                 <p class="slug">Welcome to</p>
-                <img src="images/preview-landing-page/logo-stacked-white.svg" 
-                    alt="Champlain College Logo"
-                    class="logo">
-                <div class="form-container" 
-                    data-form-open="false">
+                <img alt="Champlain College Logo" class="logo" src="images/preview-landing-page/logo-stacked-white.svg" />
+                <div class="form-container" data-form-open="false">
                     <div class="form-box bold">
                         <div class="white-button">Enter your email</div>
                         <div class="blue-button">Get info!</div>
@@ -454,172 +433,79 @@ div.social-connect-icons a {
     <div class="promo">
         <h2>Dream It. <span class="mobile-block">Then Do It.</span></h2>
         <p>Create endless possibilities for your future as you explore your interests, ask big questions, solve hard problems, think deeply, and learn by doing.</p>
-        <p>From day one, you&rsquo;ll start gaining the academic, professional, and practical knowledge you will need to thrive in our ever-changing world. <a style="color: #00a9e0 !important; font-weight: 700;" href="https://www.champlain.edu" onclick="sendGaEvent('Body Link')" target="_blank">Learn More</a></p>
+        <p>From day one, you&rsquo;ll start gaining the academic, professional, and practical knowledge you will need to thrive in our ever-changing world. <a href="https://www.champlain.edu" onclick="sendGaEvent('Body Link')" style="color: #00a9e0 !important; font-weight: bold;" target="_blank">Learn More</a></p>
     </div>
     <div class="triple-pane">
         <div class="row">
-            <div class="single-pane col-md-4">
-                <img alt="plane icon" 
-                    src="images/preview-landing-page/visit.svg" /> 
-                <p class="cc-blue-header h3">Plan a Visit</p>
-                <p>Many students say they knew Champlain was the right school for them the moment they first stepped on campus. <a href="https://www.champlain.edu/admissions/undergraduate-admissions/visits-and-events" onclick="sendGaEvent('Body Link')" target="_blank">Come Visit</a></p>
+            <div class="single-pane col-md-3"><img alt="plane icon" src="images/preview-landing-page/Preview-Visit.svg" />
+                <p class="cc-blue-header h3">VISIT</p>
+                <p>See if Champlain is the right school for you. <a href="https://www.champlain.edu/admissions/undergraduate-admissions/visits-and-events" onclick="sendGaEvent('CTA Link', 'Link Click', 'Visit')" target="_blank">Come Visit</a></p>
             </div>
-            <div class="single-pane col-md-4">
-                <img alt="plane icon" 
-                    src="images/preview-landing-page/apply.svg" /> 
-                <p class="h3 cc-blue-header">Apply</p>
-                <p>Start your journey here. We are test-optional, there is no application fee, and we offer Early Decision. <a href="https://www.champlain.edu/admissions/undergraduate-admissions/apply" onclick="sendGaEvent('Body Link')" target="_blank">Apply Today</a></p>
+            <div class="single-pane col-md-3"><img alt="plane icon" src="images/preview-landing-page/Preview-Apply.svg" />
+                <p class="h3 cc-blue-header">APPLY</p>
+                <p>We're test optional and there's no application fee. <a href="https://www.champlain.edu/admissions/undergraduate-admissions/apply" onclick="sendGaEvent('CTA Link', 'Link Click', 'Apply')" target="_blank">Apply Today</a></p>
             </div>
-            <div class="single-pane col-md-4">
-            <img alt="plane icon" 
-                src="images/preview-landing-page/contact.svg" /> 
-                <p class="cc-blue-header h3">Ask Us Questions</p>
-                <p>Get in touch about our programs, financial aid, the application process&mdash;you name it! <a href="https://www.champlain.edu/admissions/undergraduate-admissions/contact-undergraduate-admissions/undergraduate-admissions-counseling-staff" onclick="sendGaEvent('Body Link')" target="_blank">Contact Us</a></p>
+            <div class="single-pane col-md-3"><img alt="plane icon" src="images/preview-landing-page/Preview-Questions.svg" />
+                <p class="cc-blue-header h3">QUESTIONS?</p>
+                <p>Ask us about programs, financial aid, applications, and more. <a href="https://www.champlain.edu/admissions/undergraduate-admissions/contact-undergraduate-admissions/undergraduate-admissions-counseling-staff" onclick="sendGaEvent('CTA Link', 'Link Click', 'Contact')" target="_blank">Contact Us</a></p>
+            </div>
+            <div class="single-pane col-md-3"><img alt="plane icon" src="images/preview-landing-page/Preview-Transfer.svg" />
+                <p class="cc-blue-header h3">TRANSFER</p>
+                <p>Transfer here in either the Fall or Spring semesters. <a href="https://www.champlain.edu/admissions/undergraduate-admissions/transfer-students" onclick="sendGaEvent('CTA Link', 'Link Click', 'Transfer')" target="_blank">Learn More</a></p>
             </div>
         </div>
-    </div>  
-    <div class="photo-section">
-        <img src="images/preview-landing-page/PerryHall-Desktop.jpg" 
-            alt="Backside of Perry Hall" class="desktop">
-        <img src="images/preview-landing-page/Students-Desktop.jpg" 
-            alt="Backside of Perry Hall" class="desktop">
-        <img src="images/preview-landing-page/PerryHall.jpg" 
-            alt="Backside of Perry Hall" class="mobile"> 
     </div>
-    <p class="h2 cc-blue-header"
-        style="
-            margin-bottom: 0;
-            padding-bottom: 1rem;
-        "><em>U.S. News &amp; World Report</em> named us a &#8220;Most Innovative School&#8221; for the fourth year in a row. <a href="https://www.champlain.edu/about-champlain" onclick="sendGaEvent('Body Link')" style="text-decoration: none;" target="_blank">Find out why</a></p>
-    <p class="h2 cc-blue-header"
-        style="
-            margin-top: 0;
-            padding-top: 1rem;
-        ">&#8220;Champlain grads have an entrepreneurial spirit. They’re innovative. They’re risk-takers. But above all, they learn by doing. That’s not the typical approach of most colleges.&#8221;<span class="quo-attr">&mdash;Burton Snowboards CEO <span class="mobile-block">Donna Carpenter</span></span></p>
+    <div class="photo-section"><img alt="Backside of Perry Hall" class="desktop" src="images/preview-landing-page/PerryHall-Desktop.jpg" /> <img alt="Backside of Perry Hall" class="desktop" src="images/preview-landing-page/Students-Desktop.jpg" /> <img alt="Backside of Perry Hall" class="mobile" src="images/preview-landing-page/PerryHall.jpg" /></div>
+    <p class="h2 cc-blue-header" style="margin-bottom: 0; padding-bottom: 1rem;"><em>U.S. News &amp; World Report</em> named us a &ldquo;Most Innovative School&rdquo; for the fourth year in a row. <a href="https://www.champlain.edu/about-champlain" onclick="sendGaEvent('Body Link')" style="text-decoration: none;" target="_blank">Find out why</a></p>
+    <p class="h2 cc-blue-header" style="margin-top: 0; padding-top: 1rem;">&ldquo;Champlain grads have an entrepreneurial spirit. They&rsquo;re innovative. They&rsquo;re risk-takers. But above all, they learn by doing. That&rsquo;s not the typical approach of most colleges.&rdquo;<span class="quo-attr">&mdash;Burton Snowboards CEO <span class="mobile-block">Donna Carpenter</span></span></p>
     <div class="alternating-images">
-        <div class="info-card" 
-            data-card-color="#00a9e0">
+        <div class="info-card" data-card-color="#00a9e0">
             <p class="card-headline">The Champlain Difference</p>
-            <p class="card-content">Our unique Upside-Down Curriculum lets you jump into your major&mdash;or start exploring what interests you most&mdash;right on day one. That means you’ll get into internships faster and graduate with four years of experience. <a class="card-link" href="https://www.champlain.edu/academics/undergraduate-academics/upside-down-curriculum" onclick="sendGaEvent('Body Link')" target="_blank">Learn more</a></p>
+            <p class="card-content">Our unique Upside-Down Curriculum lets you jump into your major&mdash;or start exploring what interests you most&mdash;right on day one. That means you&rsquo;ll get into internships faster and graduate with four years of experience. <a class="card-link" href="https://www.champlain.edu/academics/undergraduate-academics/upside-down-curriculum" onclick="sendGaEvent('Body Link')" target="_blank">Learn more</a></p>
         </div>
-        <div class="image-card">
-            <img alt="Workstudy Students at their desks" class="info-card-image mobile" src="images/preview-landing-page/PeterInternship.jpg" />
-            <img alt="Workstudy Students at their desks" class="info-card-image desktop" src="images/preview-landing-page/Peter-Desktop.jpg" />
-        </div>
-        <div class="image-card desktop" 
-            style="grid-row: span 2;">
-            <img alt="Arial shot of Aiken Quad" 
-                class="info-card-image desktop" 
-                src="images/preview-landing-page/CampusLong.jpg" />
-        </div>
-        <div class="info-card" 
-            data-card-color="#e6e6e6">
+        <div class="image-card"><img alt="Workstudy Students at their desks" class="info-card-image mobile" src="images/preview-landing-page/PeterInternship.jpg" /> <img alt="Workstudy Students at their desks" class="info-card-image desktop" src="images/preview-landing-page/Peter-Desktop.jpg" /></div>
+        <div class="image-card desktop" style="grid-row: span 2;"><img alt="Arial shot of Aiken Quad" class="info-card-image desktop" src="images/preview-landing-page/CampusLong.jpg" /></div>
+        <div class="info-card" data-card-color="#e6e6e6">
             <p class="card-headline">Majors That Matter</p>
-            <p class="card-content">Our 28 majors, 29 minors, and 30 specializations will set you up for success in the most in-demand fields&mdash;like Criminal Justice, Management & Innovation, Marketing, Computer & Digital Forensics, Data Analytics, Game Design, Psychology, and more! <a class="card-link" href="https://www.champlain.edu/academics/undergraduate-academics/majors-and-specializations" onclick="sendGaEvent('Body Link')" target="_blank">Explore Our Majors</a></p>
+            <p class="card-content">Our 28 majors, 29 minors, and 30 specializations will set you up for success in the most in-demand fields&mdash;like Criminal Justice, Management &amp; Innovation, Marketing, Computer &amp; Digital Forensics, Data Analytics, Game Design, Psychology, and more! <a class="card-link" href="https://www.champlain.edu/academics/undergraduate-academics/majors-and-specializations" onclick="sendGaEvent('Body Link')" target="_blank">Explore Our Majors</a></p>
         </div>
-        <div class="image-card" 
-            style="
-                grid-column: 2; 
-                grid-row: 4;
-            ">
-            <img alt="Student managing sound board" 
-                class="info-card-image mobile" 
-                src="images/preview-landing-page/soundboard.jpg" />
-            <img alt="Student managing sound board" 
-                class="info-card-image desktop" 
-                src="images/preview-landing-page/SoundBooth-Desktop.jpg" />
-        </div>
-        <div class="info-card" 
-            data-card-color="#236192">
+        <div class="image-card" style="grid-column: 2; grid-row: 4;"><img alt="Student managing sound board" class="info-card-image mobile" src="images/preview-landing-page/soundboard.jpg" /> <img alt="Student managing sound board" class="info-card-image desktop" src="images/preview-landing-page/SoundBooth-Desktop.jpg" /></div>
+        <div class="info-card" data-card-color="#236192">
             <p class="card-headline">Land Your Dream Job After Graduation</p>
-            <p class="card-content">An impressive 94% of the Class of 2017 are employed or continuing their education just six months after graduating. What’s more, 89% of them completed one or more internships or experiential learning opportunities while they were here. <a class="card-link" href="https://www.champlain.edu/career-success/success-statistics" onclick="sendGaEvent('Body Link')" target="_blank">Career Outcomes</a></p>
+            <p class="card-content">An impressive 94% of the Class of 2017 are employed or continuing their education just six months after graduating. What&rsquo;s more, 89% of them completed one or more internships or experiential learning opportunities while they were here. <a class="card-link" href="https://www.champlain.edu/career-success/success-statistics" onclick="sendGaEvent('Body Link')" target="_blank">Career Outcomes</a></p>
         </div>
-        <div class="info-card" 
-            data-card-color="#e6e6e6">
+        <div class="info-card" data-card-color="#e6e6e6">
             <p class="card-headline">Live in the #1 College Town</p>
-            <p class="card-content">Burlington’s small-town charm and big-city vibe lets you live the best of both worlds. The backdrop to it all? Stunning Lake Champlain and mountains everywhere you look. Plus, New England’s best trails to bike, hike, ski, and ride are just a short drive away. <a class="card-link" href="https://www.champlain.edu/student-life/burlington" onclick="sendGaEvent('Body Link')" target="_blank">Discover Burlington</a></p>
+            <p class="card-content">Burlington&rsquo;s small-town charm and big-city vibe lets you live the best of both worlds. The backdrop to it all? Stunning Lake Champlain and mountains everywhere you look. Plus, New England&rsquo;s best trails to bike, hike, ski, and ride are just a short drive away. <a class="card-link" href="https://www.champlain.edu/student-life/burlington" onclick="sendGaEvent('Body Link')" target="_blank">Discover Burlington</a></p>
         </div>
-        <div class="image-card">
-            <img alt="Student taking a picture of campus" class="info-card-image mobile" src="images/preview-landing-page/CampusView.jpg" />
-            <img alt="Student looking over a bridge" class="info-card-image desktop" src="images/preview-landing-page/StudyAbroad-Desktop.jpg" />
-        </div>
-        <div class="info-card" 
-            data-card-color="#00a9e0">
+        <div class="image-card"><img alt="Student taking a picture of campus" class="info-card-image mobile" src="images/preview-landing-page/CampusView.jpg" /> <img alt="Student looking over a bridge" class="info-card-image desktop" src="images/preview-landing-page/StudyAbroad-Desktop.jpg" /></div>
+        <div class="info-card" data-card-color="#00a9e0">
             <p class="card-headline">Become a Global Citizen</p>
             <p class="card-content">In addition to our home in Vermont, we have campuses in Montreal, Canada, and Dublin, Ireland, plus a mission and curriculum that encourages international study. More than 56% of our students study abroad, and many also intern while they&rsquo;re overseas. <a class="card-link" href="https://www.champlain.edu/student-life/study-abroad" onclick="sendGaEvent('Body Link')" target="_blank">Study Abroad</a></p>
         </div>
-        <div class="image-card">
-            <img alt="Student looking over a bridge" class="info-card-image mobile" src="images/preview-landing-page/StudyAbroad.jpg" />
-        </div>
+        <div class="image-card"><img alt="Student looking over a bridge" class="info-card-image mobile" src="images/preview-landing-page/StudyAbroad.jpg" /></div>
     </div>
     <p class="h2 cc-blue-header">&ldquo;What would an ideal college look like? A lot like this. American higher education would be better off if more schools tried to replicate what&rsquo;s going on here.&rdquo; <span class="quo-attr">&mdash;John Tierney, <em>The Atlantic</em></span></p>
-    <img class="hero desktop" 
-        alt="Photo of The Stiller School of Business" 
-        src="images/preview-landing-page/StillerPhoto.jpg" />
-    <img class="not-hero mobile" 
-        alt="Photo of The Stiller School of Business" 
-        src="images/preview-landing-page/Stiller.jpg" />
+    <img alt="Photo of The Stiller School of Business" class="hero desktop" src="images/preview-landing-page/StillerPhoto.jpg" /> <img alt="Photo of The Stiller School of Business" class="not-hero mobile" src="images/preview-landing-page/Stiller.jpg" />
     <div class="bottom-ctas">
-        <div class="info-card" 
-            data-card-color="#e6e6e6">
+        <div class="info-card" data-card-color="#e6e6e6">
             <p class="h3 cc-blue-header">Take the Next Step</p>
-            <p style="
-                font-size: 22px;
-                line-height: 32px;
-                ">Come tour our hilltop campus, explore our majors, learn about our small class sizes, industry-expert faculty, and close-knit community. <a href="https://www.champlain.edu/admissions/undergraduate-admissions/visits-and-events" onclick="sendGaEvent('Body Link')" style="text-decoration: none;" target="_blank">Come Visit</a></p>
+            <p style="font-size: 22px; line-height: 32px;">Come tour our hilltop campus, explore our majors, learn about our small class sizes, industry-expert faculty, and close-knit community. <a href="https://www.champlain.edu/admissions/undergraduate-admissions/visits-and-events" onclick="sendGaEvent('Body Link')" style="text-decoration: none;" target="_blank">Come Visit</a></p>
         </div>
-        <div class="info-card" 
-            data-card-color="#00a9e0">
+        <div class="info-card" data-card-color="#00a9e0">
             <p class="h3 cc-blue-header">Like What You See?</p>
-            <p style="
-                font-size: 22px;
-                line-height: 32px;
-                ">Innovative majors, outstanding outcomes, stunning campus, the ideal college and community. This is your moment! <a href="https://www.champlain.edu/admissions/undergraduate-admissions/apply" onclick="sendGaEvent('Body Link')" target="_blank">Apply Today</a></p>
+            <p style="font-size: 22px; line-height: 32px;">Innovative majors, outstanding outcomes, stunning campus, the ideal college and community. This is your moment! <a href="https://www.champlain.edu/admissions/undergraduate-admissions/apply" onclick="sendGaEvent('Body Link')" target="_blank">Apply Today</a></p>
         </div>
     </div>
     <div class="social-connect-container">
         <h2>Say Hello!</h2>
-        <div class="social-connect-icons">
-            <a href="https://www.facebook.com/ChamplainEdu/" 
-                target="_blank">
-                <img src="https://play.champlain.edu/common/imgs/Facebook.svg" 
-                    alt="Facebook Icon" 
-                    class="social-icon">
-            </a>
-            <a href="https://www.instagram.com/champlainedu/?hl=en" 
-                target="_blank">
-                <img src="https://play.champlain.edu/common/imgs/Instagram.svg" 
-                    alt="Instagram Icon" 
-                    class="social-icon">
-            </a>
-            <a href="sms:+18026250201">
-                <img src="https://play.champlain.edu/common/imgs/Text.svg" 
-                    alt="Message Icon" 
-                    class="social-icon">
-            </a>
-            <a href="mailto:admission@champlain.edu">
-                <img src="https://play.champlain.edu/common/imgs/Email.svg" 
-                    alt="Email Icon" 
-                    class="social-icon">
-            </a>
-        </div>
+        <div class="social-connect-icons"><a href="https://www.facebook.com/ChamplainEdu/" target="_blank"> <img alt="Facebook Icon" class="social-icon" src="https://play.champlain.edu/common/imgs/Facebook.svg" /> </a> <a href="https://www.instagram.com/champlainedu/?hl=en" target="_blank"> <img alt="Instagram Icon" class="social-icon" src="https://play.champlain.edu/common/imgs/Instagram.svg" /> </a> <a href="sms:+18026250201"> <img alt="Message Icon" class="social-icon" src="https://play.champlain.edu/common/imgs/Text.svg" /> </a> <a href="mailto:admission@champlain.edu"> <img alt="Email Icon" class="social-icon" src="https://play.champlain.edu/common/imgs/Email.svg" /> </a></div>
     </div>
 </div>
-<div class="remodal" 
-    data-remodal-id="video-modal" 
-    data-remodal-options="hashTracking: false">
-<button class="remodal-close" 
-    data-remodal-action="close"></button>
+<div class="remodal" data-remodal-id="video-modal" data-remodal-options="hashTracking: false"><button class="remodal-close" data-remodal-action="close"></button>
     <h1>Welcome to Champlain</h1>
-    <div class="responsive-video-container">
-        <iframe frameborder="0" 
-            height="360" 
-            id="remodal-video" 
-            src="https://player.vimeo.com/video/252945387" 
-            width="640"></iframe>
-    </div>
+    <div class="responsive-video-container"><iframe frameborder="0" height="360" id="remodal-video" src="https://player.vimeo.com/video/252945387" width="640"></iframe></div>
 </div>
 <p>
-    <script src="https://player.vimeo.com/api/player.js" 
-        type="text/javascript"></script>
+    <script src="https://player.vimeo.com/api/player.js" type="text/javascript"></script>
 </p>
