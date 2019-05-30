@@ -1,416 +1,6 @@
-<p><link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" /></p>
-<style>
-@font-face {
-    font-family: "Archer Book";
-    src: url("documents/fonts/Archer-Book.woff") format('woff');
-}
-div.snazy_nav { display: none; }
-#breadcrumbs { display: none; }
-@media only screen and (max-width: 768px) {
-    div.preview-landing-page img {
-        max-width: unset !important;
-    }
-    div.video-overlay {
-        background: url(images/preview-landing-page/Preview-Mobile-Hero.jpg) !important;
-        background-size: cover !important;
-        padding-bottom: 2rem;
-    }
-    div.preview-landing-page .video-container .video-overlay .form-container.mobile-scrolling {
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-    }
-}
-.social-icon.show-tooltip {
-    display: none !important;
-}
-body div.preview-landing-page .video-container {
-    height: calc(100vh - 95px);
-}
-#content {
-    width: unset;
-    max-width: 1280px;
-    margin: auto;
-}
-.promo {
-    background: #236192;
-    padding: 2rem 2rem 5rem;
-    color: #fff;
-    text-align: center;
-}
-.promo p {
-    margin: auto;
-    font-size: 22px;
-    line-height: 35px;
-    font-weight: 300;
-}
-.promo p a {
-    font-weight: 700;
-}
-@media only screen and (min-width: 768px) {
-    .promo p {
-        max-width: 67%;
-    }
-    .promo h2 {
-        font-size: 58px;
-    }
-}
-@media only screen and (max-width: 768px) {
-    .promo h2 {
-        font-size: 51px;
-    }
-    body div.preview-landing-page .triple-pane .single-pane.col-md-4 .h3 {
-        font-size: 24px;
-    }
-}
-.promo h2 {
-    font-size: 58px;
-    line-height: 1em;
-    margin: 0.5em 0;
-    font-family: "Archer Book";
-    font-weight: 300;
-    color: #fff;
-}
-div.promo h2::after {
-    content: '';
-    display: block;
-    width: 5rem;
-    height: 5px;
-    background: #00a9e0;
-    margin: 1.75rem auto 0.75rem;
-}
-div.preview-landing-page .triple-pane {
-    padding: 3rem 1rem !important;
-}
-body #outer-container, body #inner-container {
-    background: #000 !important;
-}
-@media only screen and (min-width: 768px) {
-    div.alternating-images {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(5, 1fr);
-    }
-}
-div.alternating-images {
-    width: unset !important;
-}
-div.image-card {
-    overflow: hidden;
-    position: relative;
-}
-img.info-card-image.desktop {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    padding: 0 !important;
-}
-img.info-card-image.mobile {
-    width: 100%;
-    height: auto;
-}
-.info-card a {
-    font-weight: 700;
-}
-@media only screen and (min-width: 768px) {
-    img.info-card-image {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        padding: 0 !important;
-    }
-    div.video-overlay-content {
-        width: 500px;
-    }
-    .info-card {
-        padding: 4rem calc(33% / 2);
-        text-align: center;
-    }
-}
-@media only screen and (max-width: 768px) {
-    img.info-card-image {
-        width: 100%;
-        height: auto;
-    }
-    .info-card {
-        padding: 4rem 2rem;
-        text-align: center;
-    }
-}
-img.not-hero.mobile {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.card-headline {
-    font-family: "Archer Book";
-    font-size: 43px;
-    line-height: 53px;
-}
-.info-card[data-card-color="#00a9e0"] {
-    background: #00a9e0;
-    color: #fff;
-}
-.info-card .card-headline::after {
-    content: '';
-    display: block;
-    width: 5rem;
-    height: 5px;
-    margin: 1.5rem auto;
-}
-.card-content {
-    font-size: 22px;
-    line-height: 35px;
-}
-.info-card[data-card-color="#00a9e0"] .card-headline::after, .info-card[data-card-color="#e6e6e6"] .card-headline::after {
-    background: #236192;
-}
-.info-card[data-card-color="#e6e6e6"] {
-    background: #e6e6e6;
-}
-.info-card[data-card-color="#e6e6e6"] .card-headline {
-    color: #00a9e0;
-}
-.info-card[data-card-color="#236192"] .card-headline::after {
-    background: #00a9e0;
-}
-.info-card[data-card-color="#236192"] {
-    background: #236192;
-    color: #fff;
-}
-.info-card[data-card-color="#236192"] .card-headline,
-.info-card[data-card-color="#236192"] a,
-.info-card[data-card-color="#00a9e0"] a,
-.info-card[data-card-color="#00a9e0"] p.h3 {
-    color: #fff;
-}
-div.preview-landing-page a {
-    text-decoration: underline !important;
-}
-div.photo-section {
-    display: flex;
-}
-div.photo-section img {
-    padding: 0 !important;
-}
-div.triple-pane p.cc-blue-header.h3 {
-    text-transform: uppercase;
-    font-size: 24px;
-}
-body div.preview-landing-page .cc-blue-header.h2 {
-    line-height: 37px;
-    font-size: 27px;
-}
-.triple-pane p {
-    font-size: 17px;
-}
-[data-card-color="#e6e6e6"] a {
-    color: #236192 !important;
-}
-@media only screen and (min-width: 768px) {
-    div.bottom-ctas {
-        display: flex;
-    }
-    body div.preview-landing-page .video-container .video-overlay .play-button {
-        width: 120px;
-        height: 120px;
-    }
-    body div.preview-landing-page .cc-blue-header.h2 {
-        width: 67%;
-    }
-    .bottom-ctas .info-card {
-        padding: 4rem calc(33% / 4);
-    }
-    body .info-card p:not(.card-headline):not(.card-content) {
-        margin-top: 5px;
-    }
-}
-@media only screen and (max-width: 768px) {
-    .bottom-ctas .info-card {
-        padding: 4rem 2rem 3rem;
-    }
-    .triple-pane p {
-        font-size: 19px;
-        margin-top: 3px;
-        line-height: 29px;
-    }
-    body div.preview-landing-page .cc-blue-header.h2 {
-        line-height: 33px;
-        font-size: 23px;
-    }
-    body div.preview-landing-page .cc-blue-header.h2 a {
-        color: #236192;
-        font-weight: 700;
-    }
-    span.quo-attr {
-        font-size: 17px;
-        line-height: 23px;
-        margin-top: 6px;
-    }
-    span.quo-attr em {
-        font-size: 16px;
-    }
-    div.social {
-        display: none;
-    }
-    div.contact {
-        display: none;
-    }
-    body .primaryContent {
-        background: #000 !important;
-    }
-}
-.triple-pane a {
-    color: #236192;
-    font-weight: 700;
-}
-.info-card p:not(.card-headline):not(.card-content) {
-    font-size: 26px;
-}
-.info-card p.h3:not(.card-headline):not(.card-content) {
-    text-transform: uppercase;
-}
-.quo-attr, .quo-attr em {
-    text-transform: uppercase;
-    color: #236192 !important;
-    font-weight: 700;
-}
-.quo-attr {
-    font-size: 21px;
-    display: block;
-}
-.quo-attr em {
-    font-size: 20px;
-}
-div#social-media {
-    display: none;
-}
-img.hero {
-    padding: 0 !important;
-}
-img.mobile.hero {
-    position: absolute;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-p.slug {
-    color: #fff !important;
-    margin-bottom: 0;
-    letter-spacing: -1px;
-    text-shadow: none;
-    font-weight: 300;
-}
-div.preview-landing-page .video-container .video-overlay .form-container {
-    width: 333px;
-}
-div.preview-landing-page .video-container .video-overlay .form-container .form-box .white-button, div.preview-landing-page .video-container .video-overlay .form-container .form-box .blue-button {
-    font-size: 16px !important;
-    text-transform: uppercase;
-}
-img.logo {
-    margin: -40px auto 2rem;
-}
-@media only screen and (min-width: 768px) {
-    p.slug {
-        font-size: 48px !important;
-    }
-    div.preview-landing-page .triple-pane .single-pane.col-md-3 img {
-        width: 31%;
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
-}
-@media only screen and (max-width: 768px) {
-    div.triple-pane img {
-        width: 40%;
-        margin-top: 2rem;
-    }
-    img.logo {
-        width: 80%;
-        margin-top: -30px;
-    }
-    div.breadcrumbs {
-        display: none;
-    }
-    nav.secondaryNav {
-        display: none;
-    }
-    nav.primaryNav ul.tabs {
-        margin-top: -1px;
-        padding-bottom: 1px;
-    }
-    span.mobile-block {
-        display: block;
-    }
-    p.slug {
-        font-size: 38px !important;
-        margin-bottom: 7px;
-    }
-}
-
-div.social-connect-icons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    margin: 2rem auto;
-    max-width: 350px;
-}
-img.social-icon {
-    width: 40px;
-    height: 40px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    opacity: 0.5;
-    -webkit-transition: 0.2s all ease-out;
-    -o-transition: 0.2s all ease-out;
-    transition: 0.2s all ease-out;
-    padding: 0;
-}
-div.social-connect-container {
-    background: #000;
-    text-align: center;
-    margin-top: -1px;
-}
-div.social-connect-container h2 {
-    font-family: "Archer Book";
-    color: #fff;
-    font-size: 48px;
-    font-weight: 300;
-}
-@media only screen and (min-width: 768px) {
-    div.social-connect-container {
-        padding: 2.5rem 2rem 3rem;
-    }
-}
-@media only screen and (max-width: 768px) {
-    div.social-connect-container {
-        padding: 2rem;
-    }
-    .card-content {
-        font-size: 22px;
-        line-height: 35px;
-    }
-}
-div.social-connect-icons a {
-    background: #fff;
-    border-radius: 50%;
-    padding: 0.5rem;
-    opacity: 0.5;
-    -webkit-transition: 0.2s all ease-out;
-    -o-transition: 0.2s all ease-out;
-    transition: 0.2s all ease-out;
-}
-#footer .logo a, #footer .logo span {
-    top: 0 !important;
-}
-#footer {
-    margin-top: -10px !important;
-}
-</style>
+<p><link href="https://fonts.googleapis.com/css?family=Lato:300,900" rel="stylesheet" /></p>
+<style><!--
+--></style>
 <div class="preview-landing-page">
     <div class="video-container">
         <div class="video-box desktop"><video width="320" height="240" preload="preload" class="dynamic-video" autoplay="autoplay" loop="loop" muted="muted"><source src="Media/Preview-Landing-Page/preview.mp4" type="video/mp4" /> </video></div>
@@ -418,10 +8,9 @@ div.social-connect-icons a {
             <div class="video-overlay-content"><a class="desktop" href="#" onclick="sendGaEvent('Video Modal')" data-remodal-target="video-modal"> <img alt="play button" class="play-button" src="https://lh3.googleusercontent.com/-0pBrsfEFB5s/WmpB5NBHTiI/AAAAAAAAEYE/TVvORG9WLoYQTgEMdmeHVuuctYmUM4oIgCK8BGAs/s105/2018-01-25.png" /> </a>
                 <p class="slug">Welcome to</p>
                 <img alt="Champlain College Logo" class="logo" src="images/preview-landing-page/logo-stacked-white.svg" />
-                <div class="form-container" data-form-open="false">
+                <div class="form-container" data-form-open="false"><!--<div class="form-animation-wrapper desktop"><img alt="Animation of stickers coming out of an envelope." height="280" src="Images/Preview-Landing-Page/18-ADM-4906-Preview_PopUp-330x280.gif" title="Get on our mailing list, get cool stuff." width="330" /></div>-->
                     <div class="form-box bold">
-                        <div class="white-button">Enter your email</div>
-                        <div class="blue-button">Get info!</div>
+                        <div class="orange-button">Want more info? Sign Up!</div>
                     </div>
                     <div class="popup-form">
                         <p class="exit-button">x</p>
@@ -433,62 +22,61 @@ div.social-connect-icons a {
     <div class="promo">
         <h2>Dream It. <span class="mobile-block">Then Do It.</span></h2>
         <p>Create endless possibilities for your future as you explore your interests, ask big questions, solve hard problems, think deeply, and learn by doing.</p>
-        <p>From day one, you&rsquo;ll start gaining the academic, professional, and practical knowledge you will need to thrive in our ever-changing world. <a href="https://www.champlain.edu" onclick="sendGaEvent('Body Link')" style="color: #00a9e0 !important; font-weight: bold;" target="_blank">Learn More</a></p>
+        <p>From day one, you&rsquo;ll start gaining the academic, professional, and practical knowledge you will need to thrive in our ever-changing world. <a href="https://www.champlain.edu" onclick="sendGaEvent('Body Link')" target="_blank">Learn More</a></p>
     </div>
     <div class="triple-pane">
         <div class="row">
-            <div class="single-pane col-md-3"><img alt="plane icon" src="images/preview-landing-page/Preview-Visit.svg" />
-                <p class="cc-blue-header h3">VISIT</p>
-                <p>See if Champlain is the right school for you. <a href="https://www.champlain.edu/admissions/undergraduate-admissions/visits-and-events" onclick="sendGaEvent('CTA Link', 'Link Click', 'Visit')" target="_blank">Come Visit</a></p>
+            <div class="single-pane col-md-3"><img alt="plane icon" src="Images/Preview-Landing-Page/Visit-Icon2.svg" title="Visit Champlain" /><br />
+                <p class="cc-blue-header h3"><a href="https://www.champlain.edu/admissions/undergraduate-admissions/visits-and-events" onclick="sendGaEvent('CTA Link', 'Link Click', 'Visit')" target="_blank">VISIT</a></p>
+                <p>See if Champlain is the right school for you.</p>
             </div>
-            <div class="single-pane col-md-3"><img alt="plane icon" src="images/preview-landing-page/Preview-Apply.svg" />
-                <p class="h3 cc-blue-header">APPLY</p>
-                <p>We're test optional and there's no application fee. <a href="https://www.champlain.edu/admissions/undergraduate-admissions/apply" onclick="sendGaEvent('CTA Link', 'Link Click', 'Apply')" target="_blank">Apply Today</a></p>
+            <div class="single-pane col-md-3"><img alt="Apply to Champlain College" src="Images/Preview-Landing-Page/Apply-Icon2.svg" title="Apply to Champlain College" />
+                <p class="h3 cc-blue-header"><a href="https://www.champlain.edu/admissions/undergraduate-admissions/apply/first-year-applicants">APPLY</a></p>
+                <p>Find out how to apply.</p>
             </div>
-            <div class="single-pane col-md-3"><img alt="plane icon" src="images/preview-landing-page/Preview-Questions.svg" />
-                <p class="cc-blue-header h3">QUESTIONS?</p>
-                <p>Ask us about programs, financial aid, applications, and more. <a href="https://www.champlain.edu/admissions/undergraduate-admissions/contact-undergraduate-admissions/undergraduate-admissions-counseling-staff" onclick="sendGaEvent('CTA Link', 'Link Click', 'Contact')" target="_blank">Contact Us</a></p>
+            <div class="single-pane col-md-3"><img alt="Question Mark Chat Bubble" src="Images/Preview-Landing-Page/Questions-Icon2.svg" title="Contact Us With Your Questions" />
+                <p class="cc-blue-header h3"><a href="https://www.champlain.edu/admissions/undergraduate-admissions/contact-undergraduate-admissions/undergraduate-admissions-counseling-staff" onclick="sendGaEvent('CTA Link', 'Link Click', 'Contact')" target="_blank">QUESTIONS?</a></p>
+                <p>Ask us about programs, financial aid, applications, and more</p>
             </div>
-            <div class="single-pane col-md-3"><img alt="plane icon" src="images/preview-landing-page/Preview-Transfer.svg" />
-                <p class="cc-blue-header h3">TRANSFER</p>
-                <p>Transfer here in either the Fall or Spring semesters. <a href="https://www.champlain.edu/admissions/undergraduate-admissions/transfer-students" onclick="sendGaEvent('CTA Link', 'Link Click', 'Transfer')" target="_blank">Learn More</a></p>
+            <div class="single-pane col-md-3"><img alt="Transfer to Champlain College" src="Images/Preview-Landing-Page/Transfer-Icon2.svg" title="Transfer to Champlain College" />
+                <p class="cc-blue-header h3"><a href="https://www.champlain.edu/admissions/undergraduate-admissions/transfer-students" onclick="sendGaEvent('CTA Link', 'Link Click', 'Transfer')" target="_blank">TRANSFER</a></p>
+                <p>Transfer here in either the Fall or Spring semesters.</p>
             </div>
         </div>
     </div>
     <div class="photo-section"><img alt="Backside of Perry Hall" class="desktop" src="images/preview-landing-page/PerryHall-Desktop.jpg" /> <img alt="Backside of Perry Hall" class="desktop" src="images/preview-landing-page/Students-Desktop.jpg" /> <img alt="Backside of Perry Hall" class="mobile" src="images/preview-landing-page/PerryHall.jpg" /></div>
-    <p class="h2 cc-blue-header" style="margin-bottom: 0; padding-bottom: 1rem;"><em>U.S. News &amp; World Report</em> named us a &ldquo;Most Innovative School&rdquo; for the fourth year in a row. <a href="https://www.champlain.edu/about-champlain" onclick="sendGaEvent('Body Link')" style="text-decoration: none;" target="_blank">Find out why</a></p>
-    <p class="h2 cc-blue-header" style="margin-top: 0; padding-top: 1rem;">&ldquo;Champlain grads have an entrepreneurial spirit. They&rsquo;re innovative. They&rsquo;re risk-takers. But above all, they learn by doing. That&rsquo;s not the typical approach of most colleges.&rdquo;<span class="quo-attr">&mdash;Burton Snowboards CEO <span class="mobile-block">Donna Carpenter</span></span></p>
+    <p class="h2 cc-blue-header"><em>U.S. News &amp; World Report</em> named us a <span class="quote">&ldquo;Most Innovative School&rdquo;</span> for the fourth year in a row. <a href="https://www.champlain.edu/about-champlain" onclick="sendGaEvent('Body Link')" style="text-decoration: none;" target="_blank">Find out why</a></p>
     <div class="alternating-images">
         <div class="info-card" data-card-color="#00a9e0">
             <p class="card-headline">The Champlain Difference</p>
-            <p class="card-content">Our unique Upside-Down Curriculum lets you jump into your major&mdash;or start exploring what interests you most&mdash;right on day one. That means you&rsquo;ll get into internships faster and graduate with four years of experience. <a class="card-link" href="https://www.champlain.edu/academics/undergraduate-academics/upside-down-curriculum" onclick="sendGaEvent('Body Link')" target="_blank">Learn more</a></p>
+            <p class="card-content">Our unique Upside-Down Curriculum lets you jump into your major&mdash;or start exploring what interests you most&mdash;right on day one. That means you&rsquo;ll get into internships faster and graduate with four years of experience. <br /><a class="card-link" href="https://www.champlain.edu/academics/undergraduate-academics/upside-down-curriculum" onclick="sendGaEvent('Body Link')" target="_blank">Learn more</a></p>
         </div>
         <div class="image-card"><img alt="Workstudy Students at their desks" class="info-card-image mobile" src="images/preview-landing-page/PeterInternship.jpg" /> <img alt="Workstudy Students at their desks" class="info-card-image desktop" src="images/preview-landing-page/Peter-Desktop.jpg" /></div>
         <div class="image-card desktop" style="grid-row: span 2;"><img alt="Arial shot of Aiken Quad" class="info-card-image desktop" src="images/preview-landing-page/CampusLong.jpg" /></div>
-        <div class="info-card" data-card-color="#e6e6e6">
+        <div class="info-card" data-card-color="#f1b434">
             <p class="card-headline">Majors That Matter</p>
-            <p class="card-content">Our 28 majors, 29 minors, and 30 specializations will set you up for success in the most in-demand fields&mdash;like Criminal Justice, Management &amp; Innovation, Marketing, Computer &amp; Digital Forensics, Data Analytics, Game Design, Psychology, and more! <a class="card-link" href="https://www.champlain.edu/academics/undergraduate-academics/majors-and-specializations" onclick="sendGaEvent('Body Link')" target="_blank">Explore Our Majors</a></p>
+            <p class="card-content">Our 28 majors, 29 minors, and 30 specializations will set you up for success in the most in-demand fields&mdash;like Criminal Justice, Management &amp; Innovation, Marketing, Computer &amp; Digital Forensics, Data Analytics, Game Design, Psychology, and more! <br /><a class="card-link" href="https://www.champlain.edu/academics/undergraduate-academics/majors-and-specializations" onclick="sendGaEvent('Body Link')" target="_blank">Explore Our Majors</a></p>
         </div>
         <div class="image-card" style="grid-column: 2; grid-row: 4;"><img alt="Student managing sound board" class="info-card-image mobile" src="images/preview-landing-page/soundboard.jpg" /> <img alt="Student managing sound board" class="info-card-image desktop" src="images/preview-landing-page/SoundBooth-Desktop.jpg" /></div>
-        <div class="info-card" data-card-color="#236192">
+        <div class="info-card" data-card-color="#00a9e0">
             <p class="card-headline">Land Your Dream Job After Graduation</p>
             <p class="card-content">An impressive 94% of the Class of 2017 are employed or continuing their education just six months after graduating. What&rsquo;s more, 89% of them completed one or more internships or experiential learning opportunities while they were here. <a class="card-link" href="https://www.champlain.edu/career-success/success-statistics" onclick="sendGaEvent('Body Link')" target="_blank">Career Outcomes</a></p>
         </div>
-        <div class="info-card" data-card-color="#e6e6e6">
+        <div class="info-card" data-card-color="#f1b434">
             <p class="card-headline">Live in the #1 College Town</p>
-            <p class="card-content">Burlington&rsquo;s small-town charm and big-city vibe lets you live the best of both worlds. The backdrop to it all? Stunning Lake Champlain and mountains everywhere you look. Plus, New England&rsquo;s best trails to bike, hike, ski, and ride are just a short drive away. <a class="card-link" href="https://www.champlain.edu/student-life/burlington" onclick="sendGaEvent('Body Link')" target="_blank">Discover Burlington</a></p>
+            <p class="card-content">Burlington&rsquo;s small-town charm and big-city vibe lets you live the best of both worlds. The backdrop to it all? Stunning Lake Champlain and mountains everywhere you look. Plus, New England&rsquo;s best trails to bike, hike, ski, and ride are just minutes away. <br /><a class="card-link" href="https://www.champlain.edu/student-life/burlington" onclick="sendGaEvent('Body Link')" target="_blank">Discover Burlington</a></p>
         </div>
         <div class="image-card"><img alt="Student taking a picture of campus" class="info-card-image mobile" src="images/preview-landing-page/CampusView.jpg" /> <img alt="Student looking over a bridge" class="info-card-image desktop" src="images/preview-landing-page/StudyAbroad-Desktop.jpg" /></div>
         <div class="info-card" data-card-color="#00a9e0">
             <p class="card-headline">Become a Global Citizen</p>
-            <p class="card-content">In addition to our home in Vermont, we have campuses in Montreal, Canada, and Dublin, Ireland, plus a mission and curriculum that encourages international study. More than 56% of our students study abroad, and many also intern while they&rsquo;re overseas. <a class="card-link" href="https://www.champlain.edu/student-life/study-abroad" onclick="sendGaEvent('Body Link')" target="_blank">Study Abroad</a></p>
+            <p class="card-content">In addition to our home in Vermont, we have campuses in Montreal, Canada, and Dublin, Ireland, plus a mission and curriculum that encourages international study. More than 56% of our students study abroad, and many also intern while they&rsquo;re overseas. <br /><a class="card-link" href="https://www.champlain.edu/student-life/study-abroad" onclick="sendGaEvent('Body Link')" target="_blank">Study Abroad</a></p>
         </div>
         <div class="image-card"><img alt="Student looking over a bridge" class="info-card-image mobile" src="images/preview-landing-page/StudyAbroad.jpg" /></div>
     </div>
-    <p class="h2 cc-blue-header">&ldquo;What would an ideal college look like? A lot like this. American higher education would be better off if more schools tried to replicate what&rsquo;s going on here.&rdquo; <span class="quo-attr">&mdash;John Tierney, <em>The Atlantic</em></span></p>
+    <p class="h2 cc-blue-header cc-blue-quote">&ldquo;What would an ideal college look like? A lot like this. American higher education would be better off if more schools tried to replicate what&rsquo;s going on here.&rdquo; <span class="quo-attr">&mdash;John Tierney, <em>The Atlantic</em></span></p>
     <img alt="Photo of The Stiller School of Business" class="hero desktop" src="images/preview-landing-page/StillerPhoto.jpg" /> <img alt="Photo of The Stiller School of Business" class="not-hero mobile" src="images/preview-landing-page/Stiller.jpg" />
     <div class="bottom-ctas">
-        <div class="info-card" data-card-color="#e6e6e6">
+        <div class="info-card" data-card-color="#f1b434">
             <p class="h3 cc-blue-header">Take the Next Step</p>
             <p style="font-size: 22px; line-height: 32px;">Come tour our hilltop campus, explore our majors, learn about our small class sizes, industry-expert faculty, and close-knit community. <a href="https://www.champlain.edu/admissions/undergraduate-admissions/visits-and-events" onclick="sendGaEvent('Body Link')" style="text-decoration: none;" target="_blank">Come Visit</a></p>
         </div>
@@ -504,7 +92,7 @@ div.social-connect-icons a {
 </div>
 <div class="remodal" data-remodal-id="video-modal" data-remodal-options="hashTracking: false"><button class="remodal-close" data-remodal-action="close"></button>
     <h1>Welcome to Champlain</h1>
-    <div class="responsive-video-container"><iframe frameborder="0" height="360" id="remodal-video" src="https://player.vimeo.com/video/252945387" width="640"></iframe></div>
+    <div class="responsive-video-container"><iframe frameborder="0" height="360" id="remodal-video" src="https://player.vimeo.com/video/253840544" width="640"></iframe></div>
 </div>
 <p>
     <script src="https://player.vimeo.com/api/player.js" type="text/javascript"></script>
